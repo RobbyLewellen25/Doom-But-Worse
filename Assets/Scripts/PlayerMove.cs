@@ -5,7 +5,9 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
 
-    public float playerSpeed = 20f;
+    public float playerSpeed = 10f;
+    public float momentumDampening = 5f;
+
     private CharacterController myCC;
     public Animator camAnim;
     private bool isWalking;
@@ -35,7 +37,9 @@ public class PlayerMove : MonoBehaviour
         inputVector.Normalize();
         inputVector = transform.TransformDirection(inputVector);
 
-        movementVector = (inputVector * playerSpeed) + (Vector3.up * myGravity);;
+        inputVector = vector3.Lerp(inputVector, Vector3.zero, momentumDampening * time.deltaTime)
+
+        movementVector = (inputVector * playerSpeed) + (Vector3.up * myGravity);
     }
 
 
