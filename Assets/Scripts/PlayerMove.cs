@@ -26,18 +26,30 @@ public class PlayerMove : MonoBehaviour
     {
         GetInput();
         MovePlayer();
-        CheckForHeadBob();
 
         camAnim.SetBool("isWalking", isWalking);
     }
 
     void GetInput()
     {
-        inputVector = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
-        inputVector.Normalize();
-        inputVector = transform.TransformDirection(inputVector);
+        if(Input.GetKey(KeyCode.W) ||
+           Input.GetKey(KeyCode.S) ||
+           Input.GetKey(KeyCode.A) ||
+           Input.GetKey(KeyCode.D))
+           {
+                 inputVector = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
+                inputVector.Normalize();
+                inputVector = transform.TransformDirection(inputVector);
 
-        inputVector = vector3.Lerp(inputVector, Vector3.zero, momentumDampening * time.deltaTime)
+            isWalking = true;
+           }
+        else 
+        {
+            inputVector = Vector3.Lerp(inputVector, Vector3.zero, momentumDampening * Time.deltaTime);
+            isWalking = false;
+        }
+
+
 
         movementVector = (inputVector * playerSpeed) + (Vector3.up * myGravity);
     }
@@ -48,15 +60,4 @@ public class PlayerMove : MonoBehaviour
         myCC.Move(movementVector * Time.deltaTime);
     }
     
-    void CheckForHeadBob() 
-    {
-        if(myCC.velocity.magnitude>0.1f)
-        {
-            isWalking = true;
-        }
-        else
-        {
-            isWalking = false;
-        }
-    }
 }
