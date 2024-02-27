@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Gun : MonoBehaviour
 {
@@ -16,7 +15,7 @@ public class Gun : MonoBehaviour
     public float gunShotRadius = 20f;
 
     public int maxAmmo;
-    private int ammo = 10;
+    private int ammo;
 
     public LayerMask raycastLayerMask;
     public LayerMask enemyLayerMask;
@@ -123,5 +122,6 @@ public class Gun : MonoBehaviour
         {
             ammo = maxAmmo;
         }
+ 
     }
 }

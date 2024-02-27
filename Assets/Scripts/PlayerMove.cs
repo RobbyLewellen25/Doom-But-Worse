@@ -6,7 +6,7 @@ public class PlayerMove : MonoBehaviour
 {
 
     public float playerSpeed = 10f;
-    public float momentumDampening = 5f;
+    public float momentumDampening = 2f;
 
     private CharacterController myCC;
     public Animator camAnim;
