@@ -7,6 +7,7 @@ public class DoorScript : MonoBehaviour
     public Animator doorAnim;
     private bool isOpen = false;
     private bool inTrigger = false;
+    private int count = 0;
 
     void Start()
     {
@@ -15,7 +16,7 @@ public class DoorScript : MonoBehaviour
 
     void Update()
     {
-        doorAnim.SetBool("openSeasame", isOpen);
+
     }
 
    private void OnTriggerEnter(Collider other)
@@ -23,29 +24,37 @@ public class DoorScript : MonoBehaviour
        if(other.tag == "Player" || other.tag == "Enemy")
        {
             isOpen = true;
+            inTrigger = true;
+            count++;
+            doorAnim.SetBool("openSeasame", isOpen);
+            doorAnim.SetBool("closeSeasame", !isOpen);
        }
+
    }
 
     private void OnTriggerExit(Collider other)
     {
-        if(other.tag == "Player" || other.tag == "Enemy" && inTrigger == false)
+        count--;
+        if(other.tag == "Player" || other.tag == "Enemy" && count == 0)
         {
             inTrigger = false;
             isOpen = false;
+            doorAnim.SetBool("closeSeasame", !isOpen);
+            doorAnim.SetBool("openSeasame", isOpen);
         }
     }
 
-    void OnTriggerStay(Collider other)
-    {
-        if (other.gameObject.tag == "Player" || other.gameObject.tag == "Enemy")
-        {
-            inTrigger = true;
-        }
-        else
-        {
-            inTrigger = false;
-        }
-    }
+ //   void OnTriggerStay(Collider other)
+ //   {
+ //       if (other.gameObject.tag == "Player" || other.gameObject.tag == "Enemy")
+ //       {
+ //           inTrigger = true;
+ //       }
+ //       else
+ //       {
+ //           inTrigger = false;
+//        }
+ //   }
 
     
 }

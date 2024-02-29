@@ -37,7 +37,7 @@ public class PlayerMove : MonoBehaviour
            Input.GetKey(KeyCode.A) ||
            Input.GetKey(KeyCode.D))
            {
-                 inputVector = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
+                inputVector = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
                 inputVector.Normalize();
                 inputVector = transform.TransformDirection(inputVector);
 
@@ -45,12 +45,13 @@ public class PlayerMove : MonoBehaviour
            }
         else 
         {
-            inputVector = Vector3.Lerp(inputVector, Vector3.zero, momentumDampening * Time.deltaTime);
+            float speed = inputVector.magnitude;
+            float modifiedMomentumDampening = momentumDampening * speed;
+
+            inputVector = Vector3.Lerp(inputVector, Vector3.zero, modifiedMomentumDampening * Time.deltaTime);
             isWalking = false;
         }
-
-
-
+        
         movementVector = (inputVector * playerSpeed) + (Vector3.up * myGravity);
     }
 
