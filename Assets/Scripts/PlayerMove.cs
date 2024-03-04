@@ -45,10 +45,8 @@ public class PlayerMove : MonoBehaviour
            }
         else 
         {
-            float speed = inputVector.magnitude;
-            float modifiedMomentumDampening = momentumDampening * speed;
 
-            inputVector = Vector3.Lerp(inputVector, Vector3.zero, modifiedMomentumDampening * Time.deltaTime);
+            inputVector = Vector3.Lerp(inputVector, Vector3.zero, momentumDampening * Time.deltaTime);
             isWalking = false;
         }
         
