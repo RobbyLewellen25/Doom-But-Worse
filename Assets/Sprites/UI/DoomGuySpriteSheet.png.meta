@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,7 +121,889 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Smile1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 985
+        width: 142
+        height: 176
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 306983c04ba9e4d8bbd6a4f3d5c59fd9
+      internalID: -1862031359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mad1
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 985
+        width: 143
+        height: 176
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e31bf11e42ecd4037bef67c3b1996d90
+      internalID: -460170926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yell1
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 979
+        width: 143
+        height: 182
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 970cc2e78d6e24861995d6b761ad87ea
+      internalID: 973221054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalL1
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 991
+        width: 143
+        height: 170
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67d58f91d710243cc8ce4839c07152c0
+      internalID: -198892253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Normal1
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 993
+        width: 143
+        height: 170
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 528b53bbef4b3448ab42fd00f5a0e23c
+      internalID: -1391420214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalR1
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 991
+        width: 140
+        height: 170
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68dd67c953718411faae6e804947c754
+      internalID: 1180655044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LookRight1
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 985
+        width: 155
+        height: 176
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d426e8a18c5df424ea2f9df53dd3c111
+      internalID: -1939535244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LookLeft1
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 979
+        width: 153
+        height: 178
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69762911cacbe49c2a3cb5fae2cfd9e5
+      internalID: -1746011866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smile2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 801
+        width: 142
+        height: 177
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 272e9fd12bfae4658868370a2b01c700
+      internalID: 1714792674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mad2
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 801
+        width: 143
+        height: 177
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41b54a6e67cc04eaba41c7fd99c23274
+      internalID: -1932885772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yell2
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 795
+        width: 143
+        height: 183
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc16383d366cb4b4aa5999d128e9bdcf
+      internalID: 828062016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalL2
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 808
+        width: 143
+        height: 170
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9709cd0fc74343cbbda2bdcbd82978f
+      internalID: 1192767597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Normal2
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 808
+        width: 143
+        height: 170
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ad50c6d8906a44a19e66ba615a1dc05
+      internalID: 898612350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalR2
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 808
+        width: 140
+        height: 170
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52ccb0d26a38149d89a469b574028548
+      internalID: -1654383392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LookRight2
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 795
+        width: 155
+        height: 176
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02eeaf4b424414e90a763ecc6957fc3d
+      internalID: 1380210322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LookLeft2
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 792
+        width: 153
+        height: 178
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa74ee7cbf0d2426cbf456ba3b5b0e83
+      internalID: 1100416391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smile3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 605
+        width: 142
+        height: 176
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6471c2de844064407880d2909f4c1714
+      internalID: 408472204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mad3
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 605
+        width: 143
+        height: 176
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3375b8708434c4d7a9f83997184735f3
+      internalID: 696612404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yell3
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 599
+        width: 143
+        height: 182
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 494b594e790c0462f9cfbceca956feb0
+      internalID: -955459502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalL3
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 608
+        width: 143
+        height: 176
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 412803e9ffb4a45e6a58bb0355227c35
+      internalID: -1131377392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Normal3
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 608
+        width: 143
+        height: 176
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2aa9e53b4d754acf9730b7bb98b552d
+      internalID: -1939113126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalR3
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 611
+        width: 140
+        height: 176
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1baa3687c47b74396a0e8a8d3e42528f
+      internalID: 871715836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LookRight3
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 605
+        width: 159
+        height: 176
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de405be4271514bfbab586693cd8f290
+      internalID: -465849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LookLeft3
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 602
+        width: 159
+        height: 178
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4da25a435d9c14976991e849e51bcea2
+      internalID: 376791953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smile4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 415
+        width: 142
+        height: 176
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96dc77f36b97546eb85d1d24c17f605c
+      internalID: -1448401024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mad4
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 415
+        width: 143
+        height: 176
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b4e6c1c180f049919906e1687cf2b7f
+      internalID: -801488700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yell4
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 409
+        width: 143
+        height: 182
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20eb00d320b774ba98ccb6eb595ecd8b
+      internalID: -900309784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalL4
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 415
+        width: 143
+        height: 183
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25e6b5983c32d4fb980ccc2ac5663576
+      internalID: 249624176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Normal4
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 415
+        width: 143
+        height: 183
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bdfd69fa0bff4bbf8e0fd4d3c5777d5
+      internalID: 1134837062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalR4
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 415
+        width: 140
+        height: 183
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4d4933e8944742beafadf43634cbdf5
+      internalID: -1396797631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LookRight4
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 412
+        width: 172
+        height: 182
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 507b9c45b99cd4dd7ae120c087611ddf
+      internalID: 1269833801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LookLeft4
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 412
+        width: 163
+        height: 178
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dc569376620948da83ba10d3299d69a
+      internalID: 558877651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smile5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 225
+        width: 142
+        height: 176
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49b7cb278fc684c0bac4cf9f25145ef3
+      internalID: 1036647273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mad5
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 225
+        width: 143
+        height: 176
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90257ea42acc9465cb586b990474d22c
+      internalID: -764902997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yell5
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 219
+        width: 143
+        height: 182
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a6be999eef264b628b68175b5569e65
+      internalID: 1258682431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalL5
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 225
+        width: 143
+        height: 183
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11c61626a0f7c4cf38de39add2407adb
+      internalID: -457614491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Normal5
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 225
+        width: 143
+        height: 183
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86ed287cf3b2c4e768365b1c3b5a365b
+      internalID: -1804256614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalR5
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 225
+        width: 140
+        height: 183
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69360ff90319a4542af4a3c285b0c772
+      internalID: 652752060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LookRight5
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 222
+        width: 178
+        height: 182
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01e923358f33846aeb1811371065c19a
+      internalID: 1129102911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LookLeft5
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 222
+        width: 163
+        height: 178
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6a5eff907f1c4f5e8d2caff5c95c057
+      internalID: 41985637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 142
+        height: 182
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd32e2aae26a2414d9ab2bc521889b71
+      internalID: 778183654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: God
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 38
+        width: 143
+        height: 172
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 979022271b0864e6b8a4701642a2e821
+      internalID: 688092391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +1014,49 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Dead: 778183654
+      God: 688092391
+      LookLeft1: -1746011866
+      LookLeft2: 1100416391
+      LookLeft3: 376791953
+      LookLeft4: 558877651
+      LookLeft5: 41985637
+      LookRight1: -1939535244
+      LookRight2: 1380210322
+      LookRight3: -465849
+      LookRight4: 1269833801
+      LookRight5: 1129102911
+      Mad1: -460170926
+      Mad2: -1932885772
+      Mad3: 696612404
+      Mad4: -801488700
+      Mad5: -764902997
+      Normal1: -1391420214
+      Normal2: 898612350
+      Normal3: -1939113126
+      Normal4: 1134837062
+      Normal5: -1804256614
+      NormalL1: -198892253
+      NormalL2: 1192767597
+      NormalL3: -1131377392
+      NormalL4: 249624176
+      NormalL5: -457614491
+      NormalR1: 1180655044
+      NormalR2: -1654383392
+      NormalR3: 871715836
+      NormalR4: -1396797631
+      NormalR5: 652752060
+      Smile1: -1862031359
+      Smile2: 1714792674
+      Smile3: 408472204
+      Smile4: -1448401024
+      Smile5: 1036647273
+      Yell1: 973221054
+      Yell2: 828062016
+      Yell3: -955459502
+      Yell4: -900309784
+      Yell5: 1258682431
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyAwareness : MonoBehaviour
 {
     public float awarenessRadius = 8f;
-    public Material aggroMat;
+
     public bool isAggro;
     private Transform playersTransform;
 
@@ -27,7 +27,7 @@ public class EnemyAwareness : MonoBehaviour
 
         if (isAggro)
         {
-            GetComponent<MeshRenderer>().material = aggroMat;
+            
         }
     }
 
