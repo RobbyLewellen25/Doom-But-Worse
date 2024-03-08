@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 239c7643770704d4492f5e71e6cad3e8
+guid: 5b2cd46666cf14eda89c38c32dff2f74
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -50,7 +50,7 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 0
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -123,30 +123,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PC Computer - DOOM DOOM II - Imp_0
+      name: 414-4142668_doom-sprites-no-background-hd-png-download_0
       rect:
         serializedVersion: 2
-        x: 36
-        y: 147
-        width: 665
-        height: 743
+        x: 0
+        y: 0
+        width: 860
+        height: 1190
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 0, y: -64}
-        - {x: 50, y: 0}
-        - {x: 0, y: 64}
-        - {x: -50, y: 0}
-      physicsShape:
-      - - {x: 0, y: -64}
-        - {x: 50, y: 0}
-        - {x: 0, y: 64}
-        - {x: -50, y: 0}
+      outline: []
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c3927af3d60854d79ae56b38dc497ae9
-      internalID: 1508688185
+      spriteID: 75a109952a9e14957ad0b096a8e6ae88
+      internalID: -773453856
       vertices: []
       indices: 
       edges: []
@@ -162,7 +154,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      PC Computer - DOOM DOOM II - Imp_0: 1508688185
+      414-4142668_doom-sprites-no-background-hd-png-download_0: -773453856
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
