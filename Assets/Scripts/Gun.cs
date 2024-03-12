@@ -34,7 +34,7 @@ public class Gun : MonoBehaviour
    
     void Update()
     {
-        if(Input.GetMouseButtonDown(0)&& Time.time > nextTimeToFire && ammo > 0)
+        if(Input.GetMouseButton(0) && Time.time > nextTimeToFire && ammo > 0)
         {
             Fire();
         }

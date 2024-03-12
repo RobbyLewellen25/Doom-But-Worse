@@ -8,6 +8,9 @@ public class DoorScript : MonoBehaviour
     private bool isOpen = false;
     private bool inTrigger = false;
     private int count = 0;
+    public bool requiresKey;
+
+    public bool reqRed, reqBlue, reqYellow;
 
     void Start()
     {
@@ -21,13 +24,28 @@ public class DoorScript : MonoBehaviour
 
    private void OnTriggerEnter(Collider other)
     {
-       if(other.tag == "Player" || other.tag == "Enemy")
+       if(other.tag == "Player")
        {
-            isOpen = true;
-            inTrigger = true;
-            count++;
-            doorAnim.SetBool("openSeasame", isOpen);
-            doorAnim.SetBool("closeSeasame", !isOpen);
+            if (requiresKey)
+            {
+                if(reqRed && other.GetComponent<PlayerInventory>().hasRed)
+                {
+                    Door();
+                }
+                if(reqBlue && other.GetComponent<PlayerInventory>().hasBlue)
+                {
+                    Door();
+                }
+                if(reqYellow && other.GetComponent<PlayerInventory>().hasYellow)
+                {
+                    Door();
+}
+            }
+            
+            else 
+            {
+                Door();
+            }
        }
 
    }
@@ -55,6 +73,12 @@ public class DoorScript : MonoBehaviour
  //           inTrigger = false;
 //        }
  //   }
-
+    void Door() {
+        isOpen = true;
+        inTrigger = true;
+        count++;
+        doorAnim.SetBool("openSeasame", isOpen);
+        doorAnim.SetBool("closeSeasame", !isOpen);
+    }
     
 }

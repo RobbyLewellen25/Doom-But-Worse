@@ -5,7 +5,9 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
 
-    public float playerSpeed = 10f;
+    public float playerSpeed = 20f;
+    public float playerRunSpeed = 30f;
+    private float playerTempSpeed;
     public float momentumDampening = 2f;
 
     private CharacterController myCC;
@@ -37,11 +39,24 @@ public class PlayerMove : MonoBehaviour
            Input.GetKey(KeyCode.A) ||
            Input.GetKey(KeyCode.D))
            {
-                inputVector = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
-                inputVector.Normalize();
-                inputVector = transform.TransformDirection(inputVector);
+                if(Input.GetKey(KeyCode.LeftShift))
+                {
+                    playerTempSpeed = playerRunSpeed;
+                    inputVector = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
+                    inputVector.Normalize();
+                    inputVector = transform.TransformDirection(inputVector);
 
-            isWalking = true;
+                    isWalking = true;
+                }
+                else
+                {
+                    playerTempSpeed = playerSpeed;
+                    inputVector = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
+                    inputVector.Normalize();
+                    inputVector = transform.TransformDirection(inputVector);
+
+                    isWalking = true;
+                }
            }
         else 
         {
@@ -50,7 +65,7 @@ public class PlayerMove : MonoBehaviour
             isWalking = false;
         }
         
-        movementVector = (inputVector * playerSpeed) + (Vector3.up * myGravity);
+        movementVector = (inputVector * playerTempSpeed) + (Vector3.up * myGravity);
     }
 
 

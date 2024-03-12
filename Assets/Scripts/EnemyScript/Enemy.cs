@@ -1,18 +1,30 @@
-using System.Collections;
+    using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
     public EnemyManager enemyManager;
-    private float enemyHealth = 2f;
+    public float enemyHealth = 2f;
+    private Animator spriteAnim;
+    private AllignToPlayer allignToPlayer;
 
 
     public GameObject gunHitEffect;
 
-    
+    private void Start()
+    {
+        spriteAnim = GetComponentInChildren<Animator>();
+        allignToPlayer = GetComponent<AllignToPlayer>();
+
+        enemyManager = FindObjectOfType<EnemyManager>();
+    }
+
     void Update()
     {
+        spriteAnim.SetFloat("SpriteRotation", allignToPlayer.lastIndex);
+
+
         if (enemyHealth <= 0)
         {
             enemyManager.RemoveEnemy(this);
