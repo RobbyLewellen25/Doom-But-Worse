@@ -10,6 +10,7 @@ public class AllignToPlayer : MonoBehaviour
     private Vector3 targetDir;
     private float angle;
     public int lastIndex;
+    private Enemy enemy;
 
     private SpriteRenderer spriteRenderer;
 
@@ -18,6 +19,7 @@ public class AllignToPlayer : MonoBehaviour
     {
         player = FindObjectOfType<PlayerMove>().transform;
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        enemy = GetComponent<Enemy>();
     }
 
     // Update is called once per frame
@@ -30,10 +32,13 @@ public class AllignToPlayer : MonoBehaviour
 
         Vector3 tempScale = Vector3.one;
 
-        // Angle should be 0f, but sprite flips when on left or right facing front. 
+        
         // It's a weird hack, but TOO BAD.
-        if (angle > -22.5f) 
+
+        if (GetIndex(angle) >= 5 && enemy.enemyHealth > 0)
         { tempScale.x *= -1f; }
+        else
+        {}
 
         spriteRenderer.transform.localScale = tempScale;
 

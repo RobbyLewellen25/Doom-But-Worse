@@ -8,24 +8,40 @@ public class EnemyAI : MonoBehaviour
     private EnemyAwareness enemyAwareness;
     private Transform playersTransform;
     private NavMeshAgent enemyNavMeshAgent;
+    private bool enabled;
 
     private void Start()
     {
         enemyAwareness = GetComponent<EnemyAwareness>();
         playersTransform = FindObjectOfType<PlayerMove>().transform;
         enemyNavMeshAgent = GetComponent<NavMeshAgent>();
+        enabled = true;
     }
 
     private void Update()
     {
-        if (enemyAwareness.isAggro)
+        if(enabled)
         {
-            enemyNavMeshAgent.SetDestination(playersTransform.position);
+            if (enemyAwareness.isAggro)
+            {
+                enemyNavMeshAgent.SetDestination(playersTransform.position);
+            }
+            else
+            {
+                enemyNavMeshAgent.SetDestination(transform.position);
+            }
         }
         else
         {
-                enemyNavMeshAgent.SetDestination(transform.position);
+            enemyNavMeshAgent.SetDestination(transform.position);
         }
     }
+
+    public void setEnable(bool yrn)
+    {
+        enabled = yrn;
+    }
+
 }
+
 
