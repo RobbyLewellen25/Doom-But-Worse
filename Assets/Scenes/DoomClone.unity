@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1812,16 +1812,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edfe811b941d74d0eb0ff979e72c1d32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deadFace: {fileID: 778183654, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+  thisWhatGodFeelLike: {fileID: 688092391, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+  healthSprites:
+  - normalFace: {fileID: -1804256614, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+    leftFace: {fileID: -457614491, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+    rightFace: {fileID: 652752060, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+    evilFace: {fileID: 1036647273, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+    painFace: {fileID: 1258682431, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+    angryFace: {fileID: -764902997, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+    angryRightFace: {fileID: 1129102911, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+    angryLeftFace: {fileID: 41985637, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+  - normalFace: {fileID: 1134837062, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+    leftFace: {fileID: 249624176, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+    rightFace: {fileID: -1396797631, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+    evilFace: {fileID: -1448401024, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+    painFace: {fileID: -900309784, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+    angryFace: {fileID: -801488700, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+    angryRightFace: {fileID: 1269833801, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+    angryLeftFace: {fileID: 558877651, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+  - normalFace: {fileID: -1939113126, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+    leftFace: {fileID: -1131377392, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+    rightFace: {fileID: 871715836, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+    evilFace: {fileID: 408472204, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+    painFace: {fileID: 973221054, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+    angryFace: {fileID: -955459502, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+    angryRightFace: {fileID: -465849, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+    angryLeftFace: {fileID: 376791953, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+  - normalFace: {fileID: 898612350, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+    leftFace: {fileID: 1192767597, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+    rightFace: {fileID: -1654383392, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+    evilFace: {fileID: 1714792674, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+    painFace: {fileID: 828062016, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+    angryFace: {fileID: -1932885772, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+    angryRightFace: {fileID: -1932885772, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+    angryLeftFace: {fileID: 1100416391, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+  - normalFace: {fileID: -1391420214, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+    leftFace: {fileID: -198892253, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+    rightFace: {fileID: 1180655044, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+    evilFace: {fileID: -1862031359, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+    painFace: {fileID: 973221054, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+    angryFace: {fileID: -460170926, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+    angryRightFace: {fileID: -1939535244, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+    angryLeftFace: {fileID: -1746011866, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
   health: {fileID: 1558405276}
   armor: {fileID: 667037592}
   ammo: {fileID: 1317463172}
   healthIndicator: {fileID: 1921637488}
-  health1: {fileID: -1391420214, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
-  health2: {fileID: 898612350, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
-  health3: {fileID: -1939113126, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
-  health4: {fileID: 1134837062, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
-  health5: {fileID: -1804256614, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
-  health6: {fileID: 778183654, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+  faceUpdateWait: 20
 --- !u!43 &641574424
 Mesh:
   m_ObjectHideFlags: 0
