@@ -1,28 +1,36 @@
-    using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
     public EnemyManager enemyManager;
+
     public float enemyHealth = 2f;
     private Animator spriteAnim;
+
     private AllignToPlayer allignToPlayer;
     private EnemyAI ai;
     public int reactionTimeDef = 12;
     private int reactionTime;
+
     private EnemyAwareness enemyAwareness;
     private Transform playerTransform;
+
     public bool hasMelee;
     public bool hasMissile;
+        public float missileSpeed = 1000f;
+
     private bool staggd;
     private float distance;
 
 
-
+    public GameObject missile;
     public GameObject gunHitEffect;
+    public Transform spawnPoint;
 
     private float randomFloat;
+
 
     private void Start()
     {
@@ -43,13 +51,8 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
-
-
-
         randomFloat = Random.Range(0f, 1f);
         spriteAnim.SetFloat("SpriteRotation", allignToPlayer.lastIndex);
-
-
     }
 
     void FixedUpdate()
@@ -134,8 +137,11 @@ public class Enemy : MonoBehaviour
 
     private void Missile() 
     {
-
         StartCoroutine(PlayAttackAnimation());
+        GameObject bulletObj = Instantiate(missile, spawnPoint.transform.position, Quaternion.identity);
+        Rigidbody bulletRig = bulletObj.GetComponent<Rigidbody>();
+        bulletRig.AddForce(transform.forward * missileSpeed);
+
     }
     private void Melee() 
     {

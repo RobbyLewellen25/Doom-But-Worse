@@ -1812,14 +1812,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edfe811b941d74d0eb0ff979e72c1d32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deadFace: {fileID: 778183654, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+  happyExitedSoMuchFunFace: {fileID: 0}
   thisWhatGodFeelLike: {fileID: 688092391, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
   healthSprites:
   - normalFace: {fileID: -1804256614, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
     leftFace: {fileID: -457614491, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
     rightFace: {fileID: 652752060, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
     evilFace: {fileID: 1036647273, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
-    painFace: {fileID: 1258682431, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+    yellFace: {fileID: 1258682431, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
     angryFace: {fileID: -764902997, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
     angryRightFace: {fileID: 1129102911, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
     angryLeftFace: {fileID: 41985637, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
@@ -1827,7 +1827,7 @@ MonoBehaviour:
     leftFace: {fileID: 249624176, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
     rightFace: {fileID: -1396797631, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
     evilFace: {fileID: -1448401024, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
-    painFace: {fileID: -900309784, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+    yellFace: {fileID: -900309784, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
     angryFace: {fileID: -801488700, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
     angryRightFace: {fileID: 1269833801, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
     angryLeftFace: {fileID: 558877651, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
@@ -1835,23 +1835,23 @@ MonoBehaviour:
     leftFace: {fileID: -1131377392, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
     rightFace: {fileID: 871715836, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
     evilFace: {fileID: 408472204, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
-    painFace: {fileID: 973221054, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
-    angryFace: {fileID: -955459502, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+    yellFace: {fileID: -955459502, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+    angryFace: {fileID: 696612404, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
     angryRightFace: {fileID: -465849, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
     angryLeftFace: {fileID: 376791953, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
   - normalFace: {fileID: 898612350, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
     leftFace: {fileID: 1192767597, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
     rightFace: {fileID: -1654383392, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
     evilFace: {fileID: 1714792674, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
-    painFace: {fileID: 828062016, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+    yellFace: {fileID: 828062016, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
     angryFace: {fileID: -1932885772, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
-    angryRightFace: {fileID: -1932885772, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+    angryRightFace: {fileID: 1380210322, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
     angryLeftFace: {fileID: 1100416391, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
   - normalFace: {fileID: -1391420214, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
     leftFace: {fileID: -198892253, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
     rightFace: {fileID: 1180655044, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
     evilFace: {fileID: -1862031359, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
-    painFace: {fileID: 973221054, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
+    yellFace: {fileID: 973221054, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
     angryFace: {fileID: -460170926, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
     angryRightFace: {fileID: -1939535244, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
     angryLeftFace: {fileID: -1746011866, guid: e7d8c187d935a4cfd8660ddf1af9fe2a, type: 3}
@@ -3302,6 +3302,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1131088766
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1131088767}
+  m_Layer: 2
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1131088767
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1131088766}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.38, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1609173253}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1242452442
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4427,6 +4458,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2086464634}
+  - {fileID: 1131088767}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!114 &1609173254
@@ -4446,7 +4478,10 @@ MonoBehaviour:
   reactionTimeDef: 12
   hasMelee: 1
   hasMissile: 1
+  missileSpeed: 1000
+  missile: {fileID: 6483445548358703822, guid: bdabdf549d86c43c4915710faa5507b6, type: 3}
   gunHitEffect: {fileID: 2938566586960319735, guid: 90dedb59ec3ac42d7ae4b7b54c287eba, type: 3}
+  spawnPoint: {fileID: 1131088767}
 --- !u!54 &1609173255
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5914,7 +5949,7 @@ GameObject:
   - component: {fileID: 2086464635}
   - component: {fileID: 2086464636}
   - component: {fileID: 2086464637}
-  m_Layer: 9
+  m_Layer: 2
   m_Name: EnemySprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
