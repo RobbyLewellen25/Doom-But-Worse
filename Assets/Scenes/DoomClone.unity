@@ -4473,15 +4473,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52b5aa44b998d4bd09505fd160f96323, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyManager: {fileID: 1474879760}
   enemyHealth: 60
-  reactionTimeDef: 12
   hasMelee: 1
   hasMissile: 1
   missileSpeed: 1000
+  reactionTimeDef: 12
   missile: {fileID: 6483445548358703822, guid: bdabdf549d86c43c4915710faa5507b6, type: 3}
   gunHitEffect: {fileID: 2938566586960319735, guid: 90dedb59ec3ac42d7ae4b7b54c287eba, type: 3}
   spawnPoint: {fileID: 1131088767}
+  enemyManager: {fileID: 1474879760}
 --- !u!54 &1609173255
 Rigidbody:
   m_ObjectHideFlags: 0

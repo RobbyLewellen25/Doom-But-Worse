@@ -1,68 +1,76 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public EnemyManager enemyManager;
-
+    [Header("Enemy Settings")]
     public float enemyHealth = 2f;
-    private Animator spriteAnim;
-
-    private AllignToPlayer allignToPlayer;
-    private EnemyAI ai;
-    public int reactionTimeDef = 12;
-    private int reactionTime;
-
-    private EnemyAwareness enemyAwareness;
-    private Transform playerTransform;
-
     public bool hasMelee;
     public bool hasMissile;
-        public float missileSpeed = 1000f;
-
-    private bool staggd;
-    private float distance;
-
-
+    public float missileSpeed = 1000f;
+    public int reactionTimeDef = 12;
     public GameObject missile;
     public GameObject gunHitEffect;
     public Transform spawnPoint;
 
-    private float randomFloat;
+    [Header("References")]
+    public EnemyManager enemyManager;
 
+    private Animator spriteAnim;
+    private AllignToPlayer allignToPlayer;
+    private EnemyAI ai;
+    private EnemyAwareness enemyAwareness;
+    private Transform playerTransform;
+    private CapsuleCollider enemyCollider;
+
+    private int reactionTime;
+    private bool dead;
+    private bool isAttacking = false;
+    private bool staggered;
+    private float randomFloat;
+    private float distance;
 
     private void Start()
     {
-        Random.InitState((int)System.DateTime.Now.Ticks); // Seed the random number generator
+        InitializeComponents();
+        reactionTime = reactionTimeDef;
+        dead = false;
+    }
+
+    private void InitializeComponents()
+    {
+        Random.InitState((int)System.DateTime.Now.Ticks);
         randomFloat = Random.Range(0f, 1f);
 
         spriteAnim = GetComponentInChildren<Animator>();
         allignToPlayer = GetComponent<AllignToPlayer>();
-
         ai = GetComponent<EnemyAI>();
         enemyManager = FindObjectOfType<EnemyManager>();
         enemyAwareness = GetComponent<EnemyAwareness>();
         playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
-
-        reactionTime = reactionTimeDef;
-
+        enemyCollider = GetComponent<CapsuleCollider>();
     }
 
     void Update()
     {
         randomFloat = Random.Range(0f, 1f);
+        if (dead) return;
         spriteAnim.SetFloat("SpriteRotation", allignToPlayer.lastIndex);
     }
 
     void FixedUpdate()
     {
+        if (dead) return;
         distance = Vector3.Distance(transform.position, playerTransform.position);
-        
-        if(reactionTime == 0 && enemyAwareness.isAggro == true)
+        PerformAttackCheck();
+    }
+
+    private void PerformAttackCheck()
+    {
+        if(reactionTime == 0 && enemyAwareness.isAggro)
         {
-            reactionTime = reactionTimeDef;
             AttackCheck(distance);
+            reactionTime = reactionTimeDef;
         }
         else
         {
@@ -72,16 +80,17 @@ public class Enemy : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        
         Instantiate(gunHitEffect, transform.position, Quaternion.identity);
         enemyHealth -= damage;
         if (enemyHealth > 0)
         {
             StartCoroutine(PlayHitAnimation());
         }
-        if (enemyHealth <= 0)
+        else
         {
             StartCoroutine(PlayDieAnimation());
+            dead = true;
+            enemyCollider.enabled = false;
         }
     }
 
@@ -91,9 +100,9 @@ public class Enemy : MonoBehaviour
         {
             ai.setEnable(false);
             spriteAnim.SetTrigger("Hit");
-            yield return new WaitForSeconds(0.1f); // Wait for 100 ms
+            yield return new WaitForSeconds(0.1f);
             ai.setEnable(true);
-            staggd = true;
+            staggered = true;
         }
     }
 
@@ -106,46 +115,74 @@ public class Enemy : MonoBehaviour
         Destroy(gameObject);
     }
 
-    public IEnumerator PlayAttackAnimation()
-    {
-        ai.setEnable(false);
-        spriteAnim.SetTrigger("Atacc");
-        yield return new WaitForSeconds(0.5f); // Wait for 500 ms
-        ai.setEnable(true);
-    }
-
     private void AttackCheck(float dist)
     {
+        if (isAttacking) return;
+
         float tempDistance = dist;
-        float tempRand;
+        float tempRand = randomFloat * 200f;
 
-        tempRand = randomFloat * 200f;
+        if(!hasMelee) tempDistance -= 32f;
+        if(dist > 50f) tempDistance = 50f;
 
-        if(!hasMelee) {tempDistance -= 32f;}
-        if(dist > 50f) {tempDistance = 50f;}
-
-        if(staggd && hasMissile) {Missile(); staggd = false;} 
-        if(dist <= 4f)
+        if(staggered && hasMissile) 
         {
-            Melee();
+            StartCoroutine(Missile()); 
+            staggered = false;
+        } 
+        else if(dist <= 4f)
+        {
+            StartCoroutine(Melee());    
         }
         else if(tempRand < tempDistance && hasMissile)
         {
-            Missile();
+            StartCoroutine(Missile());
         }
     }
 
-    private void Missile() 
+    private IEnumerator Missile() 
     {
-        StartCoroutine(PlayAttackAnimation());
+        isAttacking = true;
+        LookAtPlayer();
+        yield return StartCoroutine(PlayAttackAnimation());
+        LookAtPlayer();
         GameObject bulletObj = Instantiate(missile, spawnPoint.transform.position, Quaternion.identity);
         Rigidbody bulletRig = bulletObj.GetComponent<Rigidbody>();
         bulletRig.AddForce(transform.forward * missileSpeed);
-
+        isAttacking = false;
     }
-    private void Melee() 
+
+    private IEnumerator Melee() 
     {
-    
-        StartCoroutine(PlayAttackAnimation());
+        isAttacking = true;
+        LookAtPlayer();
+        yield return StartCoroutine(PlayAttackAnimation());
+
+        PlayerHealth playerHealth = playerTransform.gameObject.GetComponent<PlayerHealth>();
+        if (Vector3.Distance(transform.position, playerTransform.position) <= 4f)
+        {
+            playerHealth.DamagePlayer(10);
+        }
+        isAttacking = false;
+    }
+
+    private IEnumerator PlayAttackAnimation()
+    {
+        ai.setEnable(false);
+        spriteAnim.SetTrigger("Atacc");
+        yield return new WaitForSeconds(0.8f);
+        ai.setEnable(true);
+    }
+
+    private void LookAtPlayer()
+    {
+        Vector3 direction = playerTransform.position - transform.position;
+        Quaternion rotation = Quaternion.LookRotation(direction);
+        transform.rotation = rotation;
+    }
+
+    public bool isDead()
+    {
+        return dead;
     }
 }

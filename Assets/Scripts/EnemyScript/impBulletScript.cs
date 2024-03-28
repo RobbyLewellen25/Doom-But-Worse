@@ -8,7 +8,9 @@ public class impBulletScript : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            //other.gameObject.GetComponent<Player>().TakeDamage(1);
+            GameObject player = GameObject.FindWithTag("Player");
+            PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
+            playerHealth.DamagePlayer(10);
             Destroy(gameObject);
         }
     }
