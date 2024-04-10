@@ -1,0 +1,3114 @@
+fileFormatVersion: 2
+guid: 0ed3b1965d4cb414489b0e77a15e9c91
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 25
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1012
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecd1c6343ebde4b0c89738141c266538
+      internalID: -1340048200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_1
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 1012
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ec690af5be80439daeefc17a574de2f
+      internalID: -2032993073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1012
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 403e5e41333bf4be88778e0893a45b7c
+      internalID: 934039950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_3
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 1012
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e74b8beda5c42484aa597a97a546f647
+      internalID: -2131254732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_4
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 1012
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83e8206ed9e264241960cf24918848f3
+      internalID: -114545079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_5
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 978
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 939c1e188ddd64eed9edc46cbe250f3c
+      internalID: 176482655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_6
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 978
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df0dd05f2c2494ca38248593d57ce5b6
+      internalID: 878563953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_7
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 978
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 769385d05e2594b01be17fc7bc749899
+      internalID: 1831940672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_8
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 978
+        width: 37
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d172270484fa4a418a45ef1e5891678
+      internalID: -527563036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_9
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 978
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43c8bb31e52d6487586ff289c822f23f
+      internalID: 851970759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_10
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 978
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d57ef0f3d4a34b9dbfd2a8e5998f072
+      internalID: 265804468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_11
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 978
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a060f601bea2420a8ca46193729e79e
+      internalID: -435337163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_12
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 929
+        width: 45
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe7629d398bfb4657a4483f5f21dcf8f
+      internalID: 1682783342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_13
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 929
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da1ba2b93e36b4823b994084ab33f239
+      internalID: 349305319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_18
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 929
+        width: 53
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92976ad3c7a9549fb929ddf42225b8ee
+      internalID: -1820251564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_19
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 929
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbae5a1aa1dce47c5a74a0953cd34b42
+      internalID: 1426029500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_20
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 929
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 345ddbcd25bca433a92d9851d98a9ca1
+      internalID: -1631849678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_24
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 882
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5610706f5c3d04caa8a3748ac5a29923
+      internalID: 867347034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_25
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 882
+        width: 51
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7164ead63bf03492c967b3ea5a504198
+      internalID: 723129073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_33
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 883
+        width: 53
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41939c1c7539f427e92ca1c46a55c6ed
+      internalID: -351157965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_35
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 882
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f668be887bdc24a6b8ecc7b05de8bc9d
+      internalID: -487328874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_36
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 882
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d05e0804d649b40eebfb771cff61a647
+      internalID: -40740675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_40
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 834
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7148a682a81047bd97987e119589ee0
+      internalID: -2083249007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_41
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 834
+        width: 51
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0132bf58f65041e09c97f9722f5d360
+      internalID: 554547201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_46
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 835
+        width: 53
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52cf5be8fa62545d79860ba96feb6bda
+      internalID: -1826304997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_47
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 834
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc3ebdee21ee5432d95f4cc98ec43643
+      internalID: 342164743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_48
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 834
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5af92c9637c04cc3ba5acc2e5502c4c
+      internalID: 1771130213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_52
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 816
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96ae2c447bae5478eb20b4d3f5eceecf
+      internalID: -79199701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_53
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 816
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3ad1091733ee49ca97795c6d9e2ac39
+      internalID: 848402950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_54
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 816
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 527f4c7ecd1954306a8cb927c06aa81b
+      internalID: -736401345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_55
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 816
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 375e75c4782894f42a38f005480bd2dc
+      internalID: -1430173426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_56
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 787
+        width: 37
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dfddbbc0f6d94c0bbfcb2b593695629
+      internalID: -870814937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_57
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 787
+        width: 43
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17d5c95907bf7412ba82a502882f24eb
+      internalID: -620705710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_58
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 784
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89d50bb2b2ad84b6a9c947d4c04f4c8a
+      internalID: 2098695685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_59
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 799
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5625dcd79e5c40bfb7239ccd5e28dba
+      internalID: 2137191399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_60
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 799
+        width: 33
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d5e117dbc5b741c185e2b4c5ed560c4
+      internalID: -1563372404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_61
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 799
+        width: 29
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa000a99a9ccf49d08d61910f277c24a
+      internalID: 765216599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_62
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 803
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf27556f3b9a14dd8a2c069b6fc56597
+      internalID: -1830206254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_63
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 801
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdcd3f9cf31fe4819a26d9f46787dc45
+      internalID: 1884735491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_64
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 799
+        width: 35
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65ddea1746c2148629eccef2e0999c2a
+      internalID: 1517724910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_65
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 797
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa51eed703f5a4cfcae6f0440e08d504
+      internalID: 1123429102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_66
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 797
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9913848f382343e28c3cc61bb8117e9
+      internalID: 2136429696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_69
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 782
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bda98d3c1c2424e918b5f0469cdb2530
+      internalID: 1491051730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_70
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 782
+        width: 31
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d21b5c6ef2afd4d3e8b62192a0bc869c
+      internalID: 2026624938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_71
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 782
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17bf6ec6ecad34429a2ef184be46b43b
+      internalID: 566807949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_72
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 782
+        width: 29
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab38426f0327b4ae5aa6539ce3398ebb
+      internalID: 587560781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_73
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 784
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 493e6fb552efb442d9a8443555a2f8a6
+      internalID: 1559704869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_75
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 741
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6002a98eeba44eadbd7388260df9725
+      internalID: -410412117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_76
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 741
+        width: 41
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3bd174684fd44c8f9f5e28c8d2d921e
+      internalID: 1312665937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_77
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 741
+        width: 45
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 258fbbd28fd5e4bd589f2e7a70eedafd
+      internalID: 157270244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_78
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 626
+        width: 64
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 083ae1b3d61a44f09848c0d0e13a0349
+      internalID: -25935842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_79
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 626
+        width: 81
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77c9a929b840f4e1d8965ef40d5ee862
+      internalID: 48425593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_80
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 626
+        width: 143
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e90a975aac22415da0858e9a4255638
+      internalID: 1263226618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_81
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 626
+        width: 135
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce4015a579dab42df923c2bc907f495b
+      internalID: -99486791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_82
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 626
+        width: 236
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a3e6eff0a48840efb24b43b7b1496b6
+      internalID: -1678869123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_83
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 575
+        width: 64
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a03634aee7c0426099171e5b54435a4
+      internalID: 774883536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_84
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 575
+        width: 42
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b22afc5cb66fd48e6bfed774c330841e
+      internalID: -259543194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_85
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 575
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ca39d7dd20094d24b9132f9f377159c
+      internalID: -490486953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_86
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 575
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cd13c2ef4a9941dd925c5e0ce57b623
+      internalID: 631447810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_87
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 529
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c7b9127f76854505a85d46f8f254c4f
+      internalID: 1861440218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_88
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 529
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0a2c9b426ef14e419d3fe899235c1e7
+      internalID: -1688923912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_89
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 517
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4bfe49ba79f34931a3c654c61f2ce95
+      internalID: -1565825722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_90
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 517
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d997818a4d97245a1a1af05e91289109
+      internalID: -2079040047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_91
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 517
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56bc28405c52c49b5a5882478fc936de
+      internalID: -639792507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_92
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 480
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ed33216979454a9a8404a891c07c7f5
+      internalID: -865574773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_93
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 480
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 674b9e14b8f9644d398346f0278348b8
+      internalID: 246852616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_94
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 480
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 244cd3c4adb3e4b24a1a321d4894dd11
+      internalID: -450697136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_95
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 480
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99dbe5a9b765747a9bada782c8b07ddd
+      internalID: 1626510111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_96
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 463
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae0b27baf44d74f50a259d110be3aad7
+      internalID: -376371227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_97
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 463
+        width: 34
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc07d2a398ad642a7a9ae3f25d51eef8
+      internalID: 1329933876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_98
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 463
+        width: 49
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03449141ea9a6427d9034c932d74edd7
+      internalID: -457495219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_101
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 463
+        width: 32
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e6b360e5524e4c6fbab212068ead1ab
+      internalID: 310219724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_102
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 463
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f34569df253d449208182e08b413e17a
+      internalID: 1840544066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_103
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 446
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20b011e383f434589930abd4252177ea
+      internalID: -859382251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_104
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 446
+        width: 32
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81a75f578e7924d7d8443cb3e85e409f
+      internalID: -284926089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_105
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 446
+        width: 48
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ac566b6d3d8e41b8ad2738dfc63445d
+      internalID: -1539615621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_106
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 446
+        width: 30
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18b12ac5c077a40168ebff9b6335beaa
+      internalID: -387406023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_107
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 449
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeabff29e3e2144119d2798bf0be2407
+      internalID: -1911913398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_108
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 446
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0473dab8e59354bb28c26159218027f4
+      internalID: 725253926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_109
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 405
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62d3bf44d015e4113ab52741f1856460
+      internalID: -518524085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_110
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 405
+        width: 38
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8bf8d8e11ebd4a69b3ac5e7062b26a8
+      internalID: -218375085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_111
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 405
+        width: 45
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc1ab0da45eaf407f85abc699460d189
+      internalID: 1728775794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_113
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 326
+        width: 45
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03a5425f1db8c45e9ad71b696fedb4c7
+      internalID: 1648072130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_114
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 326
+        width: 47
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf09ef0afe30444d4909f3f90ba22c50
+      internalID: -1291724665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_116
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 326
+        width: 38
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b829fd8e40b54995ba6e5d007d03394
+      internalID: -157344761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_117
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 326
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7290c183fe20e49dc8481a1736d8bb25
+      internalID: -1537234677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_118
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 326
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b714683d72bea43d7b7441f9f60849b4
+      internalID: 280736556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_119
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 326
+        width: 42
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3246b09d91774469a615374a7154ae3
+      internalID: 751400824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_120
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 326
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fd7e6510e84e46188eabf9ef669e423
+      internalID: 92230674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_122
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 326
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7a049bdd8e6e484fbbfd3294dc3d680
+      internalID: -1187487842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_123
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 288
+        width: 40
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12f9ff141d21845788171a5aa84d9540
+      internalID: -1721746178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_124
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 288
+        width: 34
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72ce58484c30748f2b6a2a36dcc7f354
+      internalID: 116337088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_125
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 288
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85e5caf515b724c5997450b79663418e
+      internalID: -1076859915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_126
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 288
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 069eca608930c47a5947557fc8c78ced
+      internalID: 2100420133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_127
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 253
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c010e5f0b58c14901b00fc7f1d305354
+      internalID: 373315571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_128
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 253
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2e87dede2ae441689a57c2fd97e0087
+      internalID: -1115831127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_129
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 253
+        width: 54
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c91dd774ce824a5aa4f9e09693a0f40
+      internalID: -2112132027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_130
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 253
+        width: 66
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf4fd326174e3464b9a028cf824a91c1
+      internalID: 326255282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_131
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 253
+        width: 51
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58dfcb01505d341de8c532a17d8b27eb
+      internalID: 8429157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_132
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 218
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c28a7abe85eb43db8ec9a70daf85678
+      internalID: 1105374187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_133
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 218
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d7676755fd834d35b3b269b6816bbfd
+      internalID: -410891157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_134
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 220
+        width: 49
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4d63b131cc1548b09c3651ef210b21a
+      internalID: -1663460176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_135
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 218
+        width: 61
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5859d3fffe7054fcdb7c2a8b549c1bfe
+      internalID: 1161148074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_136
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 218
+        width: 51
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8228706b41b14c458beec77827057e2
+      internalID: -1401069791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_137
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 203
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f19414b26a526454bbc5847e5d540196
+      internalID: 700057175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_138
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 203
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f580f1e93249447eb8baac87afc27369
+      internalID: 981153413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_139
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 203
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d7c138ffe21d4b8daa684fb93fc9f9d
+      internalID: -1158283466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_140
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 203
+        width: 49
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0288a48c76d3e40d2b8fa9c8dfdb2b58
+      internalID: 947704424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_141
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 203
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 416997f8dc0f3481491a372848046079
+      internalID: -1669562199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_145
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 116
+        width: 73
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0cc4105679724f3d8e982c640fac439
+      internalID: -1344486388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_146
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 116
+        width: 88
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd212e88217d54eaab75403d53c31401
+      internalID: 1468575810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_150
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 116
+        width: 103
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37d8fb948b19a4b59b8843f77e24f439
+      internalID: -1604290891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_160
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 77
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa926d7007066454f8cc5c450bcf1c63
+      internalID: -199881007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_161
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 78
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 066ad6cca9ca74f469a1fb2c676ec313
+      internalID: 1754961186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_162
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 74
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb8437688e7224aeab1b841949b8a087
+      internalID: -594572855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_163
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 74
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59f2c9abf528a4f6fb7c6251975a4ded
+      internalID: 1739786572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_164
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 74
+        width: 37
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddb37a5d65b684c9389d9ff28d19b7de
+      internalID: -1048645768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_165
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 74
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48af9660e119b4523b97c8ae93f8fe5e
+      internalID: -628367772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_166
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 74
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b50bb001d7cd74cdd802c0aa59f977d0
+      internalID: -1762176226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_167
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 58
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49700145f0afc48c594f9861ab7f45ee
+      internalID: -995215640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_168
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 58
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e5ba4af6b16a477aa05f98041c23efd
+      internalID: -117859457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_169
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 58
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2de6ec2523084486aee45eec75cb0e6
+      internalID: -2132568639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_170
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 58
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5bf39dde49c54aab8b417cbd78e1db3
+      internalID: 1428980093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_171
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 41
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6377b9927d9e4461dbaa2d8e8ab62d3d
+      internalID: 1852233696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_172
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 1
+        width: 42
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 279d461f316834c5eb80662991338c9e
+      internalID: 1436863846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_173
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 1
+        width: 40
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5705fa3bfc9aa4f259e78d9f1dfa5b73
+      internalID: 1333253318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_174
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 1
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4895000ddb264462a5114c377330e95
+      internalID: 1077782201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_175
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 1
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f85109a973af74d6e896a347a06ce8ca
+      internalID: -176204824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_176
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 1
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d26f551b6074546fb848469d013a5547
+      internalID: -1369592584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_177
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a7f65af042654e4b9286df54b74611a
+      internalID: -344860835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_178
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97b73c74f521b49f191be577e83c7d1d
+      internalID: 377072585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_179
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 1
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2ec6ed231bf1486193a979af443be1c
+      internalID: 801260831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_180
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 288
+        width: 3
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe5e23635ad044c31a408e8002b0d577
+      internalID: 39357059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_0: -1340048200
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_1: -2032993073
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_10: 265804468
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_100: 1049331533
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_101: 310219724
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_102: 1840544066
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_103: -859382251
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_104: -284926089
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_105: -1539615621
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_106: -387406023
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_107: -1911913398
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_108: 725253926
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_109: -518524085
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_11: -435337163
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_110: -218375085
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_111: 1728775794
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_112: -552583267
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_113: 1648072130
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_114: -1291724665
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_115: -1569553091
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_116: -157344761
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_117: -1537234677
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_118: 280736556
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_119: 751400824
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_12: 1682783342
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_120: 92230674
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_121: -919750044
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_122: -1187487842
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_123: -1721746178
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_124: 116337088
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_125: -1076859915
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_126: 2100420133
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_127: 373315571
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_128: -1115831127
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_129: -2112132027
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_13: 349305319
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_130: 326255282
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_131: 8429157
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_132: 1105374187
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_133: -410891157
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_134: -1663460176
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_135: 1161148074
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_136: -1401069791
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_137: 700057175
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_138: 981153413
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_139: -1158283466
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_14: -954453273
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_140: 947704424
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_141: -1669562199
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_142: -355429574
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_143: -906915717
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_144: -620263795
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_145: -1344486388
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_146: 1468575810
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_147: 1933627045
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_148: 1029193931
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_149: -1707527356
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_15: -1667814231
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_150: -1604290891
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_151: 1265744523
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_152: 389509957
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_153: -467257530
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_154: 1476586475
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_155: 542153777
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_156: 933020749
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_157: 1165654839
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_158: -2142629158
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_159: 1046183718
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_16: 2101669194
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_160: -199881007
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_161: 1754961186
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_162: -594572855
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_163: 1739786572
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_164: -1048645768
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_165: -628367772
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_166: -1762176226
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_167: -995215640
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_168: -117859457
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_169: -2132568639
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_17: 14811815
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_170: 1428980093
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_171: 1852233696
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_172: 1436863846
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_173: 1333253318
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_174: 1077782201
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_175: -176204824
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_176: -1369592584
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_177: -344860835
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_178: 377072585
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_179: 801260831
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_18: -1820251564
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_180: 39357059
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_19: 1426029500
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_2: 934039950
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_20: -1631849678
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_21: 2119681901
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_22: -1626834110
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_23: -893347099
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_24: 867347034
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_25: 723129073
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_26: 613870742
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_27: -1080375707
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_28: -779799000
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_29: 1842334631
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_3: -2131254732
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_30: -558359715
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_31: 1964989867
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_32: 634754449
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_33: -351157965
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_34: -1912324199
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_35: -487328874
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_36: -40740675
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_37: -69973342
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_38: -988601173
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_39: -818139616
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_4: -114545079
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_40: -2083249007
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_41: 554547201
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_42: 746290143
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_43: 338898743
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_44: -129411673
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_45: 819495630
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_46: -1826304997
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_47: 342164743
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_48: 1771130213
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_49: 884624729
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_5: 176482655
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_50: -1594620779
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_51: -2098218962
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_52: -79199701
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_53: 848402950
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_54: -736401345
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_55: -1430173426
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_56: -870814937
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_57: -620705710
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_58: 2098695685
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_59: 2137191399
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_6: 878563953
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_60: -1563372404
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_61: 765216599
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_62: -1830206254
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_63: 1884735491
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_64: 1517724910
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_65: 1123429102
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_66: 2136429696
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_67: 2043566674
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_68: 2053560336
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_69: 1491051730
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_7: 1831940672
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_70: 2026624938
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_71: 566807949
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_72: 587560781
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_73: 1559704869
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_74: -863240633
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_75: -410412117
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_76: 1312665937
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_77: 157270244
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_78: -25935842
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_79: 48425593
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_8: -527563036
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_80: 1263226618
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_81: -99486791
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_82: -1678869123
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_83: 774883536
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_84: -259543194
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_85: -490486953
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_86: 631447810
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_87: 1861440218
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_88: -1688923912
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_89: -1565825722
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_9: 851970759
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_90: -2079040047
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_91: -639792507
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_92: -865574773
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_93: 246852616
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_94: -450697136
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_95: 1626510111
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_96: -376371227
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_97: 1329933876
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_98: -457495219
+      PC Computer - DOOM DOOM II - Projectiles and Effects-1.png_99: 961762823
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
