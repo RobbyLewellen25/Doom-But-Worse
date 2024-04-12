@@ -80,7 +80,6 @@ public class Enemy : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        Instantiate(gunHitEffect, transform.position, Quaternion.identity);
         enemyHealth -= damage;
         if (enemyHealth > 0)
         {
@@ -146,7 +145,11 @@ public class Enemy : MonoBehaviour
         LookAtPlayer();
         yield return StartCoroutine(PlayAttackAnimation());
         LookAtPlayer();
+
         GameObject bulletObj = Instantiate(missile, spawnPoint.transform.position, Quaternion.identity);
+        impBulletScript bulletScript = bulletObj.GetComponent<impBulletScript>();
+        bulletScript.spawner = gameObject; // Pass a reference to the spawner to the bullet
+
         Rigidbody bulletRig = bulletObj.GetComponent<Rigidbody>();
         bulletRig.AddForce(transform.forward * missileSpeed);
         isAttacking = false;

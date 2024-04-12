@@ -22,6 +22,9 @@ public class Gun : MonoBehaviour
 
     private BoxCollider gunTrigger;
     public EnemyManager enemyManager;
+
+    public GameObject bulletImpact;
+    public GameObject bloodSplatter;
    
     void Start()
     {
@@ -60,7 +63,9 @@ public class Gun : MonoBehaviour
         }
     }
 
-    void Fire() {
+    void Fire() 
+    {
+
 
 
         //simulate gunfire radius
@@ -81,31 +86,28 @@ public class Gun : MonoBehaviour
         GetComponent<AudioSource>().Play();
 
         //damage enemies
-        foreach (var enemy in enemyManager.enemiesInTrigger)
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, transform.forward, out hit, range, raycastLayerMask))
         {
-            //get direction of enemt
-            var dir = enemy.transform.position - transform.position;
-
-            RaycastHit hit;
-
-            if (Physics.Raycast(transform.position, dir, out hit, range * 1.5f, raycastLayerMask))
+            Enemy enemy = hit.transform.GetComponent<Enemy>();
+            if (enemy)
             {
-                if(hit.transform == enemy.transform)
+                float dist = Vector3.Distance(hit.transform.position, transform.position);
+                if (dist > range * .5f)
                 {
-                    float dist = Vector3.Distance(enemy.transform.position, transform.position);
-
-                    if (dist > range * .5f)
-                    {
-                        enemy.TakeDamage(smallDamage);
-                    }
-                    else 
-                    {
-                     enemy.TakeDamage(bigDamage);
-                    }
+                    enemy.TakeDamage(smallDamage);
                 }
+                else 
+                {
+                    enemy.TakeDamage(bigDamage);
+                }
+                Instantiate(bloodSplatter, hit.point, Quaternion.identity);
+            }
+            else
+            {
+                Instantiate(bulletImpact, hit.point, Quaternion.identity);
             }
         }
-
         //reset timer
         nextTimeToFire = Time.time + fireRate;
         ammo--;
