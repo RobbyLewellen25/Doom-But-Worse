@@ -4,25 +4,24 @@ using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
+    [Header("Gun Stats")]
+    public bool isInInvintory;
     public float range = 20f;
     public float verticalRange = 20f;
-
     public float bigDamage = 2f;
     public float smallDamage = 1f;
-
     public float fireRate = 1f;
-    private float nextTimeToFire;
     public float gunShotRadius = 20f;
 
-    public int maxAmmo;
-    private int ammo;
+    [Header("Real-Time Bits")]
+    private float nextTimeToFire;
+    public bool isActive;
 
+    [Header("References")]
     public LayerMask raycastLayerMask;
     public LayerMask enemyLayerMask;
-
     private BoxCollider gunTrigger;
     public EnemyManager enemyManager;
-
     public GameObject bulletImpact;
     public GameObject bloodSplatter;
    
@@ -31,15 +30,23 @@ public class Gun : MonoBehaviour
         gunTrigger = GetComponent<BoxCollider>();
         gunTrigger.size = new Vector3(1, verticalRange, range);
         gunTrigger.center = new Vector3(0, 0, range / 2);
-        CanvasManager.Instance.UpdateAmmo(ammo);
     }
 
    
     void Update()
     {
-        if(Input.GetMouseButton(0) && Time.time > nextTimeToFire && ammo > 0)
+
+        if(Input.GetMouseButton(0) && Time.time > nextTimeToFire && ammo > 0 && isActive && isInInvintory)
         {
             Fire();
+        }
+        else if(Input.GetMouseButton(0) && Time.time > nextTimeToFire && ammo > 0 && isActive)
+        {
+            Debug.Log("Not in inventory");
+        }
+        else if(Input.GetMouseButton(0) && Time.time > nextTimeToFire && ammo > 0 && isInInvintory)
+        {
+            Debug.Log("Not Active");
         }
     }
 
@@ -65,9 +72,6 @@ public class Gun : MonoBehaviour
 
     void Fire() 
     {
-
-
-
         //simulate gunfire radius
 
         Collider[] enemyColliders;
@@ -114,18 +118,9 @@ public class Gun : MonoBehaviour
         CanvasManager.Instance.UpdateAmmo(ammo);
     }
 
-    public void GiveAmmo(int amount, GameObject pickup)
+    public void UpdateAmmo()
     {
-        if(ammo < maxAmmo) 
-        {
-            ammo += amount;
-            Destroy(pickup);
-        }
-        
-        if(ammo > maxAmmo)
-        {
-            ammo = maxAmmo;
-        }
-        CanvasManager.Instance.UpdateAmmo(ammo);
+        ammo-- amount;
+        GunSwap.Instance.GiveAmmo(0, 0, 0, -amount);
     }
 }

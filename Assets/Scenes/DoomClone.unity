@@ -1528,6 +1528,187 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &520008699
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 520008703}
+  - component: {fileID: 520008702}
+  - component: {fileID: 520008701}
+  - component: {fileID: 520008700}
+  m_Layer: 8
+  m_Name: Gattling Gun
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &520008700
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520008699}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 6e77263ffac5841f687f1971024c7b97, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &520008701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520008699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 378c8a2d56bf4472aa75c96719194ef5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInInvintory: 0
+  range: 20
+  verticalRange: 20
+  bigDamage: 15
+  smallDamage: 5
+  fireRate: 0.11
+  gunShotRadius: 20
+  maxAmmo: 99
+  isActive: 0
+  raycastLayerMask:
+    serializedVersion: 2
+    m_Bits: 513
+  enemyLayerMask:
+    serializedVersion: 2
+    m_Bits: 512
+  enemyManager: {fileID: 1474879760}
+  bulletImpact: {fileID: 916948657924031019, guid: e78a6269a98c844b58a1028cefa08fe8, type: 3}
+  bloodSplatter: {fileID: 1130212064067182901, guid: 72cc533afdded4ccfbebb272480ed8d9, type: 3}
+--- !u!65 &520008702
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520008699}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &520008703
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520008699}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1411049937}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &531566794
 Mesh:
   m_ObjectHideFlags: 0
@@ -3653,6 +3834,7 @@ GameObject:
   - component: {fileID: 1411049938}
   - component: {fileID: 1411049939}
   - component: {fileID: 1411049940}
+  - component: {fileID: 1411049941}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -3718,6 +3900,7 @@ Transform:
   - {fileID: 963194228}
   - {fileID: 468506744}
   - {fileID: 2066467553}
+  - {fileID: 520008703}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1411049938
@@ -3763,6 +3946,21 @@ MonoBehaviour:
   hasBlue: 0
   hasRed: 0
   hasYellow: 0
+--- !u!114 &1411049941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411049934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4aab6156fde0441a787c598d0442e778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  guns:
+  - {fileID: 2066467552}
+  - {fileID: 520008699}
 --- !u!1 &1474879759
 GameObject:
   m_ObjectHideFlags: 0
@@ -5463,7 +5661,7 @@ GameObject:
   - component: {fileID: 2066467554}
   - component: {fileID: 2066467556}
   m_Layer: 8
-  m_Name: Gun
+  m_Name: Pistol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5496,6 +5694,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 378c8a2d56bf4472aa75c96719194ef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isInInvintory: 0
   range: 20
   verticalRange: 20
   bigDamage: 15
@@ -5503,6 +5702,7 @@ MonoBehaviour:
   fireRate: 0.33333
   gunShotRadius: 20
   maxAmmo: 99
+  isActive: 0
   raycastLayerMask:
     serializedVersion: 2
     m_Bits: 513
