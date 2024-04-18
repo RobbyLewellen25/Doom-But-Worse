@@ -5,6 +5,7 @@ using UnityEngine;
 public class Gun : MonoBehaviour
 {
     [Header("Gun Stats")]
+    public float bulletSpreadAngle = 5f;
     public bool isInInvintory;
     public float range = 20f;
     public float verticalRange = 20f;
@@ -24,9 +25,11 @@ public class Gun : MonoBehaviour
     public EnemyManager enemyManager;
     public GameObject bulletImpact;
     public GameObject bloodSplatter;
+    private GunSwap gunSwap;
    
     void Start()
     {
+       gunSwap = GameObject.Find("Player").GetComponent<GunSwap>();
         gunTrigger = GetComponent<BoxCollider>();
         gunTrigger.size = new Vector3(1, verticalRange, range);
         gunTrigger.center = new Vector3(0, 0, range / 2);
@@ -35,16 +38,17 @@ public class Gun : MonoBehaviour
    
     void Update()
     {
+        bool has = gunSwap.HasBullets();
 
-        if(Input.GetMouseButton(0) && Time.time > nextTimeToFire && ammo > 0 && isActive && isInInvintory)
+        if(Input.GetMouseButton(0) && Time.time > nextTimeToFire && has && isActive && isInInvintory)
         {
             Fire();
         }
-        else if(Input.GetMouseButton(0) && Time.time > nextTimeToFire && ammo > 0 && isActive)
+        else if(Input.GetMouseButton(0) && Time.time > nextTimeToFire && has && isActive)
         {
             Debug.Log("Not in inventory");
         }
-        else if(Input.GetMouseButton(0) && Time.time > nextTimeToFire && ammo > 0 && isInInvintory)
+        else if(Input.GetMouseButton(0) && Time.time > nextTimeToFire && has && isInInvintory)
         {
             Debug.Log("Not Active");
         }
@@ -89,9 +93,14 @@ public class Gun : MonoBehaviour
         GetComponent<AudioSource>().Stop();
         GetComponent<AudioSource>().Play();
 
+        // Calculate spread
+        float spreadX = Random.Range(-bulletSpreadAngle, bulletSpreadAngle);
+        float spreadY = Random.Range(-bulletSpreadAngle, bulletSpreadAngle);
+        Vector3 spreadDirection = Quaternion.Euler(spreadX, spreadY, 0) * transform.forward;
+
         //damage enemies
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, transform.forward, out hit, range, raycastLayerMask))
+        if (Physics.Raycast(transform.position, spreadDirection, out hit, range, raycastLayerMask))
         {
             Enemy enemy = hit.transform.GetComponent<Enemy>();
             if (enemy)
@@ -111,16 +120,14 @@ public class Gun : MonoBehaviour
             {
                 Instantiate(bulletImpact, hit.point, Quaternion.identity);
             }
+            UpdateAmmo();
         }
         //reset timer
         nextTimeToFire = Time.time + fireRate;
-        ammo--;
-        CanvasManager.Instance.UpdateAmmo(ammo);
     }
 
     public void UpdateAmmo()
     {
-        ammo-- amount;
-        GunSwap.Instance.GiveAmmo(0, 0, 0, -amount);
+        gunSwap.TakeAmmo(1, 0, 0, 0);
     }
 }

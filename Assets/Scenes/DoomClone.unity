@@ -501,6 +501,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3139092620475208343, guid: 9b9e363819e7540679f96e4f2ff0b462, type: 3}
+      propertyPath: bullet
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 4961752476304701964, guid: 9b9e363819e7540679f96e4f2ff0b462, type: 3}
       propertyPath: m_Name
       value: BigAmmo
@@ -1655,14 +1659,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 378c8a2d56bf4472aa75c96719194ef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInInvintory: 0
+  bulletSpreadAngle: 5
+  isInInvintory: 1
   range: 20
   verticalRange: 20
   bigDamage: 15
   smallDamage: 5
   fireRate: 0.11
   gunShotRadius: 20
-  maxAmmo: 99
   isActive: 0
   raycastLayerMask:
     serializedVersion: 2
@@ -3961,6 +3965,10 @@ MonoBehaviour:
   guns:
   - {fileID: 2066467552}
   - {fileID: 520008699}
+  maxBullets: 100
+  maxShells: 0
+  maxRockets: 0
+  maxCells: 0
 --- !u!1 &1474879759
 GameObject:
   m_ObjectHideFlags: 0
@@ -5694,6 +5702,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 378c8a2d56bf4472aa75c96719194ef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletSpreadAngle: 5
   isInInvintory: 0
   range: 20
   verticalRange: 20
@@ -5701,7 +5710,6 @@ MonoBehaviour:
   smallDamage: 5
   fireRate: 0.33333
   gunShotRadius: 20
-  maxAmmo: 99
   isActive: 0
   raycastLayerMask:
     serializedVersion: 2

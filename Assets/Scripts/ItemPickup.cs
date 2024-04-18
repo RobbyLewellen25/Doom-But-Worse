@@ -10,7 +10,10 @@ public class ItemPickup : MonoBehaviour
     public bool isAmmo;
 
     public int amount;
-
+    public int bullet;
+    public int shell;
+    public int rocket;
+    public int cell;
 
     void Start()
     {
@@ -38,7 +41,7 @@ public class ItemPickup : MonoBehaviour
             }
             else if(isAmmo)
             {
-                other.GetComponentInChildren<Gun>().GiveAmmo(amount, this.gameObject);
+                other.GetComponent<GunSwap>().GiveAmmo(bullet, shell, rocket, cell, this.gameObject);
             }
 
         }
