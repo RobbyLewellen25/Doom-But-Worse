@@ -13,6 +13,11 @@ public class Gun : MonoBehaviour
     public float smallDamage = 1f;
     public float fireRate = 1f;
     public float gunShotRadius = 20f;
+    public int rays;
+    public float raySpread = 10f;
+    public enum AmmoType { Bullets = 1, Shells, Rockets, Cells }
+    public AmmoType ammoType;
+    public bool isFist;
 
     [Header("Real-Time Bits")]
     private float nextTimeToFire;
@@ -29,7 +34,7 @@ public class Gun : MonoBehaviour
    
     void Start()
     {
-       gunSwap = GameObject.Find("Player").GetComponent<GunSwap>();
+        gunSwap = GameObject.Find("Player").GetComponent<GunSwap>();
         gunTrigger = GetComponent<BoxCollider>();
         gunTrigger.size = new Vector3(1, verticalRange, range);
         gunTrigger.center = new Vector3(0, 0, range / 2);
@@ -93,41 +98,71 @@ public class Gun : MonoBehaviour
         GetComponent<AudioSource>().Stop();
         GetComponent<AudioSource>().Play();
 
-        // Calculate spread
-        float spreadX = Random.Range(-bulletSpreadAngle, bulletSpreadAngle);
-        float spreadY = Random.Range(-bulletSpreadAngle, bulletSpreadAngle);
-        Vector3 spreadDirection = Quaternion.Euler(spreadX, spreadY, 0) * transform.forward;
+        float initialSpreadAngle = -raySpread / 2;
 
-        //damage enemies
-        RaycastHit hit;
-        if (Physics.Raycast(transform.position, spreadDirection, out hit, range, raycastLayerMask))
-        {
-            Enemy enemy = hit.transform.GetComponent<Enemy>();
-            if (enemy)
+         for (int i = 0; i < rays; i++)
             {
-                float dist = Vector3.Distance(hit.transform.position, transform.position);
-                if (dist > range * .5f)
-                {
-                    enemy.TakeDamage(smallDamage);
-                }
-                else 
-                {
-                    enemy.TakeDamage(bigDamage);
-                }
-                Instantiate(bloodSplatter, hit.point, Quaternion.identity);
-            }
-            else
+            // Calculate spread
+            float spreadX = initialSpreadAngle;
+
+            if (rays > 1)
             {
-                Instantiate(bulletImpact, hit.point, Quaternion.identity);
+                spreadX += (raySpread / (rays - 1)) * i;
             }
-            UpdateAmmo();
+
+            spreadX = Random.Range(-bulletSpreadAngle + spreadX, bulletSpreadAngle + spreadX);
+            spreadX = Mathf.Clamp(spreadX, -180f, 180f); // Clamp spreadX to valid range
+
+            float spreadY = Random.Range(-bulletSpreadAngle, bulletSpreadAngle);
+            spreadY = Mathf.Clamp(spreadY, -180f, 180f); // Clamp spreadY to valid range
+            
+            Vector3 spreadDirection = Quaternion.Euler(spreadX, spreadY, 0) * transform.forward;
+
+            //damage enemies
+            RaycastHit hit;
+            if (Physics.Raycast(transform.position, spreadDirection, out hit, range, raycastLayerMask))
+            {
+                Enemy enemy = hit.transform.GetComponent<Enemy>();
+                if (enemy)
+                {
+                    float dist = Vector3.Distance(hit.transform.position, transform.position);
+                    if (dist > range * .5f)
+                    {
+                        enemy.TakeDamage(smallDamage);
+                    }
+                    else 
+                    {
+                        enemy.TakeDamage(bigDamage);
+                    }
+                    Instantiate(bloodSplatter, hit.point, Quaternion.identity);
+                }
+                else
+                {
+                    Instantiate(bulletImpact, hit.point, Quaternion.identity);
+                }
+            }
         }
+        UpdateAmmo();
         //reset timer
         nextTimeToFire = Time.time + fireRate;
     }
 
     public void UpdateAmmo()
     {
-        gunSwap.TakeAmmo(1, 0, 0, 0);
+        switch (ammoType)
+        {
+            case AmmoType.Bullets:
+                gunSwap.TakeAmmo(1, 0, 0, 0);
+                break;
+            case AmmoType.Shells:
+                gunSwap.TakeAmmo(0, 1, 0, 0);
+                break;
+            case AmmoType.Rockets:
+                gunSwap.TakeAmmo(0, 0, 1, 0);
+                break;
+            case AmmoType.Cells:
+                gunSwap.TakeAmmo(0, 0, 0, 1);
+                break;
+        }
     }
 }
