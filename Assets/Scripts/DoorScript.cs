@@ -6,7 +6,7 @@ public class DoorScript : MonoBehaviour
 {
     public Animator doorAnim;
     private bool isOpen = false;
-    private bool inTrigger = false;
+    // private bool inTrigger = false;
     private int count = 0;
     public bool requiresKey;
 
@@ -55,7 +55,7 @@ public class DoorScript : MonoBehaviour
         count--;
         if(other.tag == "Player" || other.tag == "Enemy" && count == 0)
         {
-            inTrigger = false;
+            // inTrigger = false;
             isOpen = false;
             doorAnim.SetBool("closeSeasame", !isOpen);
             doorAnim.SetBool("openSeasame", isOpen);
@@ -75,7 +75,7 @@ public class DoorScript : MonoBehaviour
  //   }
     void Door() {
         isOpen = true;
-        inTrigger = true;
+        // inTrigger = true;
         count++;
         doorAnim.SetBool("openSeasame", isOpen);
         doorAnim.SetBool("closeSeasame", !isOpen);

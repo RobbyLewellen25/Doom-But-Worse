@@ -9,7 +9,7 @@ public class EnemyAI : MonoBehaviour
     private Transform playersTransform;
     private NavMeshAgent enemyNavMeshAgent;
     private Enemy enemy;
-    private bool enabled;
+    private bool isEnabled;
 
     private void Start()
     {
@@ -17,12 +17,12 @@ public class EnemyAI : MonoBehaviour
         playersTransform = FindObjectOfType<PlayerMove>().transform;
         enemyNavMeshAgent = GetComponent<NavMeshAgent>();
         enemy = GetComponent<Enemy>();
-        enabled = true;
+        isEnabled = true;
     }
 
     private void Update()
     {
-        if(enabled)
+        if(isEnabled)
         {
             if (enemyAwareness.isAggro && enemy.isDead() == false)
             {
@@ -41,7 +41,7 @@ public class EnemyAI : MonoBehaviour
 
     public void setEnable(bool yrn)
     {
-        enabled = yrn;
+        isEnabled = yrn;
     }
 
 }
