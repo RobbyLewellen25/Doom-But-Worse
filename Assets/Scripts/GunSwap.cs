@@ -52,6 +52,10 @@ public class GunSwap : MonoBehaviour
             guns[i].GetComponent<Gun>().isActive = false;
         }
         guns[chosen].GetComponent<Gun>().isActive = true;
+        if (guns[chosen].GetComponent<Gun>().isChainsaw == true)
+            {
+                guns[chosen].GetComponent<Gun>().chainsawState = Gun.ChainsawState.Selected;
+            }
     }
     public void GiveAmmo(int bul, int she, int roc, int cel, GameObject pickup)
     {

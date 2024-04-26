@@ -7,6 +7,7 @@ public class Gun : MonoBehaviour
     [Header("Gun Stats")]
     public float bulletSpreadAngle = 5f;
     public bool isInInvintory;
+    public bool projectilePisser;
     public float range = 20f;
     public float verticalRange = 20f;
     public float bigDamage = 2f;
@@ -26,6 +27,7 @@ public class Gun : MonoBehaviour
     public bool has = false;
 
     [Header("References")]
+    public GameObject missile;
     public LayerMask raycastLayerMask;
     public LayerMask enemyLayerMask;
     private BoxCollider gunTrigger;
@@ -80,6 +82,14 @@ public class Gun : MonoBehaviour
 
         if(isChainsaw) {
             Sawdio();
+        }
+        if (!Input.GetMouseButton(0) && isActive && isChainsaw)
+        {
+        chainsawState = ChainsawState.Idle;
+        }
+        if (!isActive && isChainsaw)
+        {
+            StopAllAudio();
         }
 
     }
@@ -204,6 +214,7 @@ public class Gun : MonoBehaviour
                 Enemy enemy = hit.transform.GetComponent<Enemy>();
                 if (enemy)
                 {
+                    chainsawState = ChainsawState.Hitting;
                     float dist = Vector3.Distance(hit.transform.position, transform.position);
                     if (dist > range * .5f)
                     {
@@ -213,15 +224,16 @@ public class Gun : MonoBehaviour
                     {
                         enemy.TakeDamage(bigDamage);
                     }
-                    chainsawState = ChainsawState.Hitting;
+                    Instantiate(bloodSplatter, hit.point, Quaternion.identity);
                 }
-                else{
-                    chainsawState = ChainsawState.Firing;
+                else
+                {
+                    Instantiate(bulletImpact, hit.point, Quaternion.identity);
                 }
             }
             else
             {
-                chainsawState = ChainsawState.idle;
+                chainsawState = ChainsawState.Firing;
             }
         }
         //reset timer
@@ -275,7 +287,7 @@ public class Gun : MonoBehaviour
         switch (chainsawState)
         {
             case ChainsawState.Idle:
-                if (!audioSourceIdle.isPlaying)
+                if (!audioSourceSelected.isPlaying && !audioSourceIdle.isPlaying)
                 {
                     StopAllAudio();
                     audioSourceIdle.Play();
