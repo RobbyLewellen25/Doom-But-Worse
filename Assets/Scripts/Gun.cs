@@ -21,6 +21,7 @@ public class Gun : MonoBehaviour
     public bool isFist;
     public bool isChainsaw;
 
+
     [Header("Real-Time Bits")]
     private float nextTimeToFire;
     public bool isActive;
@@ -28,6 +29,7 @@ public class Gun : MonoBehaviour
 
     [Header("References")]
     public GameObject missile;
+    public float missileSpeed = 1000f;
     public LayerMask raycastLayerMask;
     public LayerMask enemyLayerMask;
     private BoxCollider gunTrigger;
@@ -37,6 +39,7 @@ public class Gun : MonoBehaviour
     private GunSwap gunSwap;
     public enum ChainsawState { Idle, Firing, Hitting, Selected }
     public ChainsawState chainsawState;
+    public Transform spawnPoint;
 
     public AudioSource audioSourceIdle;
     public AudioSource audioSourceFiring;
@@ -130,7 +133,7 @@ public class Gun : MonoBehaviour
 
 
 
-        if(!isFist && !isChainsaw)
+        if(!isFist && !isChainsaw && !projectilePisser)
         {
             //play test audio
             GetComponent<AudioSource>().Stop();
@@ -236,6 +239,19 @@ public class Gun : MonoBehaviour
                 chainsawState = ChainsawState.Firing;
             }
         }
+        else if (projectilePisser)
+        {
+            Debug.Log("Pissing");
+            GameObject bulletObj = Instantiate(missile, spawnPoint.transform.position, Quaternion.identity);
+            PlayerBulletScript bulletScript = bulletObj.GetComponent<PlayerBulletScript>();
+            bulletScript.spawner = gameObject; // Pass a reference to the spawner to the bullet
+
+            Rigidbody bulletRig = bulletObj.GetComponent<Rigidbody>();
+            bulletObj.transform.rotation = transform.rotation;
+            bulletRig.AddForce(transform.forward * missileSpeed);
+
+            UpdateAmmo();
+        }
         //reset timer
         nextTimeToFire = Time.time + fireRate;
     }
@@ -271,7 +287,7 @@ public class Gun : MonoBehaviour
             //    Debug.Log("Has Shells");
                 return gunSwap.HasShells();
             case AmmoType.Rockets:
-            //    Debug.Log("Has Rockets");
+               Debug.Log("Has Rockets");
                 return gunSwap.HasRockets();
             case AmmoType.Cells:
             //    Debug.Log("Has Cells");

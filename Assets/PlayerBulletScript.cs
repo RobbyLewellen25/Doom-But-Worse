@@ -2,22 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class impBulletScript : MonoBehaviour
+public class PlayerBulletScript : MonoBehaviour
 {
-    //private Animator spriteAnim;
-    //private ProjectileAllignToPlayer allignToPlayer;
+    private Animator spriteAnim;
+    private ProjectileAllignToPlayer allignToPlayer;
 
     public GameObject spawner; // The object that spawned this bullet
 
     private void Start()
     {
-        //spriteAnim = GetComponentInChildren<Animator>();
-        //allignToPlayer = GetComponent<ProjectileAllignToPlayer>();
+        spriteAnim = GetComponentInChildren<Animator>();
+        allignToPlayer = GetComponent<ProjectileAllignToPlayer>();
     }
 
     void Update()
     {
-        //spriteAnim.SetFloat("SpriteRot", allignToPlayer.lastIndex);
+        spriteAnim.SetFloat("SpriteRot", allignToPlayer.lastIndex);
     }
 
     void OnTriggerEnter(Collider other)

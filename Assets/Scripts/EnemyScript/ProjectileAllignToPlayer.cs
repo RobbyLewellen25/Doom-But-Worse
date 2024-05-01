@@ -30,8 +30,6 @@ public class ProjectileAllignToPlayer : MonoBehaviour
 
         Vector3 tempScale = Vector3.one;
 
-        
-        // It's a weird hack, but TOO BAD.
 
         if (GetIndex(angle) >= 5)
         { tempScale.x *= -1f;}
