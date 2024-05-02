@@ -5,6 +5,7 @@ using UnityEngine;
 public class Gun : MonoBehaviour
 {
     [Header("Gun Stats")]
+    public float delay = 0.5f;
     public float bulletSpreadAngle = 5f;
     public bool isInInvintory;
     public bool projectilePisser;
@@ -187,26 +188,7 @@ public class Gun : MonoBehaviour
         }
         else if(isFist)
         {
-            //damage enemies
-            RaycastHit hit;
-            if (Physics.Raycast(transform.position, transform.forward, out hit, range, raycastLayerMask))
-            {
-                Enemy enemy = hit.transform.GetComponent<Enemy>();
-                if (enemy)
-                {
-                    float dist = Vector3.Distance(hit.transform.position, transform.position);
-                    if (dist > range * .5f)
-                    {
-                        enemy.TakeDamage(smallDamage);
-                    }
-                    else 
-                    {
-                        enemy.TakeDamage(bigDamage);
-                    }
-                }
-                GetComponent<AudioSource>().Stop();
-                GetComponent<AudioSource>().Play();
-            }
+            StartCoroutine(ExecuteAfterDelay(delay));
         }
         else if(isChainsaw)
         {
@@ -232,6 +214,7 @@ public class Gun : MonoBehaviour
                 else
                 {
                     Instantiate(bulletImpact, hit.point, Quaternion.identity);
+                    chainsawState = ChainsawState.Firing;
                 }
             }
             else
@@ -241,16 +224,9 @@ public class Gun : MonoBehaviour
         }
         else if (projectilePisser)
         {
-            Debug.Log("Pissing");
-            GameObject bulletObj = Instantiate(missile, spawnPoint.transform.position, Quaternion.identity);
-            PlayerBulletScript bulletScript = bulletObj.GetComponent<PlayerBulletScript>();
-            bulletScript.spawner = gameObject; // Pass a reference to the spawner to the bullet
-
-            Rigidbody bulletRig = bulletObj.GetComponent<Rigidbody>();
-            bulletObj.transform.rotation = transform.rotation;
-            bulletRig.AddForce(transform.forward * missileSpeed);
-
-            UpdateAmmo();
+            GetComponent<AudioSource>().Stop();
+            GetComponent<AudioSource>().Play();
+            StartCoroutine(ExecuteAfterDelay(delay));
         }
         //reset timer
         nextTimeToFire = Time.time + fireRate;
@@ -339,5 +315,53 @@ public class Gun : MonoBehaviour
         audioSourceFiring.Stop();
         audioSourceHitting.Stop();
         audioSourceSelected.Stop();
+    }
+
+    IEnumerator ExecuteAfterDelay(float delay)
+{
+    yield return new WaitForSeconds(delay);
+    if (projectilePisser)
+    {
+        Piss();
+    }
+    else if (isFist)
+    {
+        Fist();
+    }
+}
+    private void Piss()
+    {
+        GameObject bulletObj = Instantiate(missile, spawnPoint.transform.position, Quaternion.identity);
+        PlayerBulletScript bulletScript = bulletObj.GetComponent<PlayerBulletScript>();
+        bulletScript.spawner = gameObject; // Pass a reference to the spawner to the bullet
+
+        Rigidbody bulletRig = bulletObj.GetComponent<Rigidbody>();
+        bulletObj.transform.rotation = transform.rotation * Quaternion.Euler(180, 0, 0);
+        bulletRig.AddForce(transform.forward * missileSpeed);
+        UpdateAmmo();
+    }
+    
+    private void Fist()
+    {
+        //damage enemies
+            RaycastHit hit;
+            if (Physics.Raycast(transform.position, transform.forward, out hit, range, raycastLayerMask))
+            {
+                Enemy enemy = hit.transform.GetComponent<Enemy>();
+                if (enemy)
+                {
+                    float dist = Vector3.Distance(hit.transform.position, transform.position);
+                    if (dist > range * .5f)
+                    {
+                        enemy.TakeDamage(smallDamage);
+                    }
+                    else 
+                    {
+                        enemy.TakeDamage(bigDamage);
+                    }
+                }
+                GetComponent<AudioSource>().Stop();
+                GetComponent<AudioSource>().Play();
+            }
     }
 }
