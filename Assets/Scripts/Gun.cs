@@ -224,7 +224,6 @@ public class Gun : MonoBehaviour
         }
         else if (projectilePisser)
         {
-            GetComponent<AudioSource>().Stop();
             GetComponent<AudioSource>().Play();
             StartCoroutine(ExecuteAfterDelay(delay));
         }

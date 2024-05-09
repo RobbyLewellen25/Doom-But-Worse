@@ -92,17 +92,25 @@ public class PlayerHealth : MonoBehaviour
 
         CanvasManager.Instance.UpdateHealth(health);
     }
-    public void GiveArmor(int amount, GameObject pickup)
+    public void GiveArmor(int amount, GameObject pickup, bool isTwo)
     {
-        if(armor < maxArmor)
+        if(armor < 100 && !isTwo)
         {
             armor += amount;
             Destroy(pickup);
+            if(armor > 100)
+            {
+                armor = 100;
+            }
         }
-
-        if(armor > maxArmor)
+        else if(armor < maxArmor && isTwo)
         {
-            armor = maxArmor;
+            armor += amount;
+            Destroy(pickup);
+            if(armor > maxArmor)
+            {
+                armor = maxArmor;
+            }
         }
         CanvasManager.Instance.UpdateArmor(armor);
     }

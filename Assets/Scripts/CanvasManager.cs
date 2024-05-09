@@ -26,7 +26,14 @@ public class CanvasManager : MonoBehaviour
 
     public TextMeshProUGUI health;
     public TextMeshProUGUI armor;
+    public TextMeshProUGUI bullets;
+    public TextMeshProUGUI shells;
+    public TextMeshProUGUI rockets;
+    public TextMeshProUGUI cells;
     public TextMeshProUGUI ammo;
+    public GameObject player;
+    private GunSwap gunSwap;
+
     public Image healthIndicator;
 
     private static CanvasManager _instance;
@@ -47,6 +54,7 @@ public class CanvasManager : MonoBehaviour
         {
             _instance = this;
         }
+        gunSwap = player.GetComponent<GunSwap>();
     }
 
     private void FixedUpdate ()
@@ -84,6 +92,10 @@ public class CanvasManager : MonoBehaviour
     public void UpdateAmmo(int ammoValue)
     {
         ammo.text = ammoValue.ToString();
+        bullets.text = gunSwap.GetBullets().ToString();
+        shells.text = gunSwap.GetShells().ToString();
+        rockets.text = gunSwap.GetRockets().ToString();
+        cells.text = gunSwap.GetCells().ToString();
     }
 
     private void UpdateHealthIndicator(int healthValue)

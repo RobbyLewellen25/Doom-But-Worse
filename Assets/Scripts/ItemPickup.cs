@@ -38,7 +38,7 @@ public class ItemPickup : MonoBehaviour
             }
             else if(isArmor)
             {
-                other.GetComponent<PlayerHealth>().GiveArmor(amount, this.gameObject);
+                other.GetComponent<PlayerHealth>().GiveArmor(amount, this.gameObject, isTwo);
             }
             else if(isAmmo)
             {

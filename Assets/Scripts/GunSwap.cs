@@ -114,4 +114,17 @@ public class GunSwap : MonoBehaviour
             if (cells > 0) return true;
             else return false;
     }
+
+    public int GetBullets() {
+            return bullets;
+    }
+    public int GetShells() {
+            return shells;
+    }
+    public int GetRockets() {
+            return rockets;
+    }
+    public int GetCells() {
+            return cells;
+    }
 }

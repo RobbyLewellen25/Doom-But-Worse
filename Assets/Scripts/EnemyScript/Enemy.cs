@@ -67,9 +67,15 @@ public class Enemy : MonoBehaviour
 
     private void PerformAttackCheck()
     {
+        //Debug.Log("Distance: " + distance);
         if(reactionTime == 0 && enemyAwareness.isAggro)
         {
             AttackCheck(distance);
+            reactionTime = reactionTimeDef;
+            //Debug.Log("Attack");
+        }
+        else if (reactionTime == 0)
+        {
             reactionTime = reactionTimeDef;
         }
         else
