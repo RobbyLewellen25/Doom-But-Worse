@@ -5,7 +5,7 @@ using UnityEngine;
 public class GunSwap : MonoBehaviour
 {
     public GameObject[] guns;
-    private int selectedGun = 0;
+    private int selectedGun = 1;
     
     [Header("Bullets")]
     private int bullets;
@@ -16,12 +16,15 @@ public class GunSwap : MonoBehaviour
     public int maxShells;
     public int maxRockets;
     public int maxCells;
+    private List<bool> inventory;
 
     void Start()
     {
-        guns[0].GetComponent<Gun>().isInInvintory = true;
-        Activate(0);
-        CanvasManager.Instance.UpdateAmmo(bullets);
+        guns[0].GetComponent<Gun>().isInInventory = true;
+        Activate(selectedGun);
+        UpdateUIAmmoCounter(selectedGun);
+        UpdateGunInventory();
+        SendArms();
     }
 
     // Update is called once per frame
@@ -32,21 +35,25 @@ public class GunSwap : MonoBehaviour
             if (Input.GetKeyDown("" + i))
             {
                Activate(i-1);
-               Debug.Log("Switching to gun " + (i-1));
+               // Debug.Log("Switching to gun " + (i-1));
             }
         }
+        UpdateUIAmmoCounter(selectedGun);
     }
 
     void AddFireArm(int gunNum)
     {
-        if(!guns[gunNum].GetComponent<Gun>().isInInvintory)
+        if(!guns[gunNum].GetComponent<Gun>().isInInventory)
         {
-            guns[gunNum].GetComponent<Gun>().isInInvintory = true;
+            guns[gunNum].GetComponent<Gun>().isInInventory = true;
             guns[gunNum].GetComponent<Gun>().isActive = true;
+            UpdateGunInventory();
+            SendArms();
         }
     }
     private void Activate(int chosen)
     {
+        selectedGun = chosen;
         for (int i = 0; i < guns.Length; i++)
         {
             guns[i].GetComponent<Gun>().isActive = false;
@@ -83,8 +90,8 @@ public class GunSwap : MonoBehaviour
         if (shells > maxShells) shells = maxShells;
         if (rockets > maxRockets) rockets = maxRockets;
         if (cells > maxCells) cells = maxCells;
-        CanvasManager.Instance.UpdateAmmo(bullets);
         Debug.Log("Ammo picked up");
+        UpdateUIAmmoCounter(selectedGun);
     }
     public void TakeAmmo(int bul, int she, int roc, int cel)
     {
@@ -96,7 +103,6 @@ public class GunSwap : MonoBehaviour
         if (shells < 0) shells = 0;
         if (rockets < 0) rockets = 0;
         if (cells < 0) cells = 0;
-        CanvasManager.Instance.UpdateAmmo(bullets);
     }
     public bool HasBullets() {
             if (bullets > 0) return true;
@@ -127,4 +133,45 @@ public class GunSwap : MonoBehaviour
     public int GetCells() {
             return cells;
     }
+
+    private void UpdateUIAmmoCounter(int j)
+    {
+        switch (guns[j].GetComponent<Gun>().ammoType)
+        {
+            case Gun.AmmoType.Bullets:
+                CanvasManager.Instance.UpdateAmmo(bullets);
+                break;
+            case Gun.AmmoType.Shells:
+                CanvasManager.Instance.UpdateAmmo(shells);
+                break;
+            case Gun.AmmoType.Rockets:
+                CanvasManager.Instance.UpdateAmmo(rockets);
+                break;
+            case Gun.AmmoType.Cells:
+                CanvasManager.Instance.UpdateAmmo(cells);
+                break;
+            case Gun.AmmoType.None:
+                CanvasManager.Instance.UpdateAmmo(-5);
+                break;
+        }
+    }
+
+    private void UpdateGunInventory()
+    {
+        List<bool> inInventory = new List<bool>();
+
+        for (int i = 0; i < guns.Length; i++)
+        {
+            bool isInInventory = guns[i].GetComponent<Gun>().isInInventory;
+            inInventory.Add(isInInventory);
+        }
+
+        inventory = inInventory;
+    }
+
+    private void SendArms()
+    {
+        CanvasManager.Instance.UpdateArmStatus(inventory);
+    }
+
 }

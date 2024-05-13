@@ -31,6 +31,16 @@ public class CanvasManager : MonoBehaviour
     public TextMeshProUGUI rockets;
     public TextMeshProUGUI cells;
     public TextMeshProUGUI ammo;
+    public TextMeshProUGUI gunTwo;
+    public TextMeshProUGUI gunThree;
+    public TextMeshProUGUI gunFour;
+    public TextMeshProUGUI gunFive;
+    public TextMeshProUGUI gunSix;
+    public TextMeshProUGUI gunSeven;
+
+    public TMP_FontAsset yellowFont; 
+    public TMP_FontAsset grayFont; 
+
     public GameObject player;
     private GunSwap gunSwap;
 
@@ -55,6 +65,7 @@ public class CanvasManager : MonoBehaviour
             _instance = this;
         }
         gunSwap = player.GetComponent<GunSwap>();
+        UpdateAmmo(0);
     }
 
     private void FixedUpdate ()
@@ -87,11 +98,12 @@ public class CanvasManager : MonoBehaviour
     public void UpdateArmor(int armorValue)
     {
         armor.text = armorValue.ToString() + "%";
-    }
+    } 
 
     public void UpdateAmmo(int ammoValue)
     {
-        ammo.text = ammoValue.ToString();
+        if (ammoValue == -5) {ammo.text = " ";}
+        else {ammo.text = ammoValue.ToString();}
         bullets.text = gunSwap.GetBullets().ToString();
         shells.text = gunSwap.GetShells().ToString();
         rockets.text = gunSwap.GetRockets().ToString();
@@ -166,6 +178,16 @@ public class CanvasManager : MonoBehaviour
 
         // Reset face to normalFace
         healthIndicator.sprite = healthSprites[healthLevel].normalFace;
+    }
+
+    public void UpdateArmStatus(List<bool> inInventory)
+    {
+        List<TextMeshProUGUI> guns = new List<TextMeshProUGUI> { gunTwo, gunThree, gunFour, gunFive, gunSix, gunSeven };
+
+        for (int i = 0; i < inInventory.Count; i++)
+        {
+            guns[i].font = inInventory[i] ? yellowFont : grayFont;
+        }
     }
 
     public void UpdateKeys()

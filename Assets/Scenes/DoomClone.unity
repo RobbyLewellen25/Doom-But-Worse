@@ -597,7 +597,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   bulletSpreadAngle: 1
-  isInInvintory: 1
+  isInInventory: 1
   projectilePisser: 1
   range: 20
   verticalRange: 20
@@ -607,7 +607,7 @@ MonoBehaviour:
   gunShotRadius: 20
   rays: 1
   raySpread: 1
-  ammoType: 1
+  ammoType: 2
   isFist: 0
   isChainsaw: 0
   isActive: 0
@@ -1569,8 +1569,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 2
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ee5eb87c362a343b4a78c39ecd2ff7ba, type: 2}
-  m_sharedMaterial: {fileID: 9129301076711600839, guid: ee5eb87c362a343b4a78c39ecd2ff7ba, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 596419f5994e947a6ac62c69462edbd5, type: 2}
+  m_sharedMaterial: {fileID: 6790483853217000336, guid: 596419f5994e947a6ac62c69462edbd5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1703,8 +1703,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 4
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ee5eb87c362a343b4a78c39ecd2ff7ba, type: 2}
-  m_sharedMaterial: {fileID: 9129301076711600839, guid: ee5eb87c362a343b4a78c39ecd2ff7ba, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 596419f5994e947a6ac62c69462edbd5, type: 2}
+  m_sharedMaterial: {fileID: 6790483853217000336, guid: 596419f5994e947a6ac62c69462edbd5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1907,7 +1907,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0.5
   bulletSpreadAngle: 1
-  isInInvintory: 1
+  isInInventory: 1
   projectilePisser: 0
   range: 2
   verticalRange: 2
@@ -2457,7 +2457,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0.5
   bulletSpreadAngle: 5
-  isInInvintory: 1
+  isInInventory: 1
   projectilePisser: 0
   range: 20
   verticalRange: 20
@@ -2467,7 +2467,7 @@ MonoBehaviour:
   gunShotRadius: 20
   rays: 1
   raySpread: 10
-  ammoType: 1
+  ammoType: 0
   isFist: 0
   isChainsaw: 0
   isActive: 0
@@ -2859,6 +2859,14 @@ MonoBehaviour:
   rockets: {fileID: 1002881468}
   cells: {fileID: 1712563580}
   ammo: {fileID: 1317463172}
+  gunTwo: {fileID: 404087344}
+  gunThree: {fileID: 1066525658}
+  gunFour: {fileID: 419933654}
+  gunFive: {fileID: 858907704}
+  gunSix: {fileID: 1621223309}
+  gunSeven: {fileID: 1905980755}
+  yellowFont: {fileID: 11400000, guid: ee5eb87c362a343b4a78c39ecd2ff7ba, type: 2}
+  grayFont: {fileID: 11400000, guid: 596419f5994e947a6ac62c69462edbd5, type: 2}
   player: {fileID: 1411049934}
   healthIndicator: {fileID: 1921637488}
   faceUpdateWait: 20
@@ -3522,8 +3530,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 5
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ee5eb87c362a343b4a78c39ecd2ff7ba, type: 2}
-  m_sharedMaterial: {fileID: 9129301076711600839, guid: ee5eb87c362a343b4a78c39ecd2ff7ba, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 596419f5994e947a6ac62c69462edbd5, type: 2}
+  m_sharedMaterial: {fileID: 6790483853217000336, guid: 596419f5994e947a6ac62c69462edbd5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4403,7 +4411,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0.5
   bulletSpreadAngle: 1
-  isInInvintory: 1
+  isInInventory: 1
   projectilePisser: 0
   range: 2
   verticalRange: 2
@@ -5173,7 +5181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   bulletSpreadAngle: 1
-  isInInvintory: 1
+  isInInventory: 1
   projectilePisser: 1
   range: 20
   verticalRange: 20
@@ -5183,7 +5191,7 @@ MonoBehaviour:
   gunShotRadius: 20
   rays: 1
   raySpread: 1
-  ammoType: 4
+  ammoType: 3
   isFist: 0
   isChainsaw: 0
   isActive: 0
@@ -5353,8 +5361,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 3
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ee5eb87c362a343b4a78c39ecd2ff7ba, type: 2}
-  m_sharedMaterial: {fileID: 9129301076711600839, guid: ee5eb87c362a343b4a78c39ecd2ff7ba, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 596419f5994e947a6ac62c69462edbd5, type: 2}
+  m_sharedMaterial: {fileID: 6790483853217000336, guid: 596419f5994e947a6ac62c69462edbd5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5921,7 +5929,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0.8
   bulletSpreadAngle: 1
-  isInInvintory: 1
+  isInInventory: 1
   projectilePisser: 1
   range: 20
   verticalRange: 20
@@ -5931,7 +5939,7 @@ MonoBehaviour:
   gunShotRadius: 20
   rays: 1
   raySpread: 1
-  ammoType: 4
+  ammoType: 3
   isFist: 0
   isChainsaw: 0
   isActive: 0
@@ -6366,7 +6374,6 @@ MonoBehaviour:
   - {fileID: 2066467552}
   - {fileID: 1551479754}
   - {fileID: 520008699}
-  - {fileID: 1008889915}
   - {fileID: 112801040}
   - {fileID: 1059587065}
   - {fileID: 1346715402}
@@ -7161,7 +7168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0.5
   bulletSpreadAngle: 5.9
-  isInInvintory: 1
+  isInInventory: 0
   projectilePisser: 0
   range: 20
   verticalRange: 20
@@ -7407,8 +7414,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 6
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ee5eb87c362a343b4a78c39ecd2ff7ba, type: 2}
-  m_sharedMaterial: {fileID: 9129301076711600839, guid: ee5eb87c362a343b4a78c39ecd2ff7ba, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 596419f5994e947a6ac62c69462edbd5, type: 2}
+  m_sharedMaterial: {fileID: 6790483853217000336, guid: 596419f5994e947a6ac62c69462edbd5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -8643,8 +8650,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 7
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ee5eb87c362a343b4a78c39ecd2ff7ba, type: 2}
-  m_sharedMaterial: {fileID: 9129301076711600839, guid: ee5eb87c362a343b4a78c39ecd2ff7ba, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 596419f5994e947a6ac62c69462edbd5, type: 2}
+  m_sharedMaterial: {fileID: 6790483853217000336, guid: 596419f5994e947a6ac62c69462edbd5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -9171,7 +9178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0.5
   bulletSpreadAngle: 1
-  isInInvintory: 1
+  isInInventory: 1
   projectilePisser: 0
   range: 20
   verticalRange: 20
@@ -9181,7 +9188,7 @@ MonoBehaviour:
   gunShotRadius: 20
   rays: 1
   raySpread: 1
-  ammoType: 1
+  ammoType: 0
   isFist: 0
   isChainsaw: 0
   isActive: 0

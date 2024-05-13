@@ -7,7 +7,7 @@ public class Gun : MonoBehaviour
     [Header("Gun Stats")]
     public float delay = 0.5f;
     public float bulletSpreadAngle = 5f;
-    public bool isInInvintory;
+    public bool isInInventory;
     public bool projectilePisser;
     public float range = 20f;
     public float verticalRange = 20f;
@@ -17,7 +17,7 @@ public class Gun : MonoBehaviour
     public float gunShotRadius = 20f;
     public int rays;
     public float raySpread = 10f;
-    public enum AmmoType { Bullets = 1, Shells, Rockets, Cells, None}
+    public enum AmmoType { Bullets, Shells, Rockets, Cells, None}
     public AmmoType ammoType;
     public bool isFist;
     public bool isChainsaw;
@@ -67,7 +67,7 @@ public class Gun : MonoBehaviour
    
     void Update()
     {
-        if(Input.GetMouseButton(0) && Time.time > nextTimeToFire && isActive && isInInvintory)
+        if(Input.GetMouseButton(0) && Time.time > nextTimeToFire && isActive && isInInventory)
         {
             has = HasAmmo();
             if(has){
@@ -79,7 +79,7 @@ public class Gun : MonoBehaviour
         {
             Debug.Log("Not in inventory");
         }
-        else if(Input.GetMouseButton(0) && Time.time > nextTimeToFire && has && isInInvintory)
+        else if(Input.GetMouseButton(0) && Time.time > nextTimeToFire && has && isInInventory)
         {
             //Debug.Log("Not Active");
         }
