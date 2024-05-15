@@ -160,10 +160,11 @@ public class GunSwap : MonoBehaviour
     {
         List<bool> inInventory = new List<bool>();
 
-        for (int i = 0; i < guns.Length; i++)
+        for (int i = 1; i < guns.Length; i++)
         {
             bool isInInventory = guns[i].GetComponent<Gun>().isInInventory;
             inInventory.Add(isInInventory);
+            Debug.Log("Gun " + i + " is in inventory: " + isInInventory);
         }
 
         inventory = inInventory;
@@ -173,5 +174,19 @@ public class GunSwap : MonoBehaviour
     {
         CanvasManager.Instance.UpdateArmStatus(inventory);
     }
+
+    public void AddGunToInventory(int gunIndex)
+{
+    if (gunIndex >= 0 && gunIndex < guns.Length)
+    {
+        guns[gunIndex].GetComponent<Gun>().isInInventory = true;
+        UpdateGunInventory();
+        SendArms();
+    }
+    else
+    {
+        Debug.LogError("Invalid gun index: " + gunIndex);
+    }
+}
 
 }

@@ -44,7 +44,10 @@ public class PlayerBulletScript : MonoBehaviour
 
     void Update()
     {
-        spriteAnim.SetFloat("SpriteRot", allignToPlayer.lastIndex);
+        if (spriteAnim != null && allignToPlayer != null)
+        {
+            spriteAnim.SetFloat("SpriteRot", allignToPlayer.lastIndex);
+        }
     }
 
     void OnTriggerEnter(Collider other)

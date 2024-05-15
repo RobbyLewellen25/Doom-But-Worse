@@ -9,12 +9,14 @@ public class ItemPickup : MonoBehaviour
     public bool isHealth;
     public bool isTwo;
     public bool isAmmo;
+    public bool isGun;
 
     public int amount;
     public int bullet;
     public int shell;
     public int rocket;
     public int cell;
+    public int gun;
 
     void Start()
     {
@@ -43,6 +45,11 @@ public class ItemPickup : MonoBehaviour
             else if(isAmmo)
             {
                 other.GetComponent<GunSwap>().GiveAmmo(bullet, shell, rocket, cell, this.gameObject);
+            }
+
+            if(isGun)
+            {
+                other.GetComponent<GunSwap>().AddGunToInventory(gun);
             }
 
         }

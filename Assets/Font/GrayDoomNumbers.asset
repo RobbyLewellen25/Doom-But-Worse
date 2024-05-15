@@ -60,9 +60,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: GrayDoomNumbers
   m_EditorClassIdentifier: 
-  hashCode: 0
+  hashCode: -1013820204
   material: {fileID: 6790483853217000336}
-  materialHashCode: 0
+  materialHashCode: -714649740
   m_Version: 1.1.0
   m_SourceFontFileGUID: 9e70ab4d93ea640d7a27e7167d849a6f
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: 9e70ab4d93ea640d7a27e7167d849a6f, type: 3}
@@ -467,7 +467,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: -1576044482190327447}
+        m_Texture: {fileID: 2800000, guid: 7e320d0fd879d4c0c8836bc20c6e9253, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []

@@ -181,14 +181,21 @@ public class CanvasManager : MonoBehaviour
     }
 
     public void UpdateArmStatus(List<bool> inInventory)
-    {
-        List<TextMeshProUGUI> guns = new List<TextMeshProUGUI> { gunTwo, gunThree, gunFour, gunFive, gunSix, gunSeven };
+{
+    List<TextMeshProUGUI> guns = new List<TextMeshProUGUI> { gunTwo, gunThree, gunFour, gunFive, gunSix, gunSeven };
 
-        for (int i = 0; i < inInventory.Count; i++)
-        {
-            guns[i].font = inInventory[i] ? yellowFont : grayFont;
-        }
+    if (inInventory.Count != guns.Count)
+    {
+        Debug.LogError("inInventory list does not have the same number of elements as guns list");
+        return;
     }
+
+    for (int i = 0; i < inInventory.Count; i++)
+    {
+        guns[i].font = inInventory[i] ? yellowFont : grayFont;
+        Debug.Log("Gun " + i + " is " + (inInventory[i] ? "in" : "not in") + " inventory");
+    }
+}
 
     public void UpdateKeys()
     {
