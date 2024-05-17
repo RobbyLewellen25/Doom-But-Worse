@@ -25,6 +25,7 @@ public class GunSwap : MonoBehaviour
         UpdateUIAmmoCounter(selectedGun);
         UpdateGunInventory();
         SendArms();
+        bullets += 20;
     }
 
     // Update is called once per frame
@@ -176,17 +177,18 @@ public class GunSwap : MonoBehaviour
     }
 
     public void AddGunToInventory(int gunIndex)
-{
-    if (gunIndex >= 0 && gunIndex < guns.Length)
     {
-        guns[gunIndex].GetComponent<Gun>().isInInventory = true;
-        UpdateGunInventory();
-        SendArms();
+        if (gunIndex >= 0 && gunIndex < guns.Length)
+        {
+            guns[gunIndex].GetComponent<Gun>().isInInventory = true;
+            UpdateGunInventory();
+            SendArms();
+            Activate(gunIndex);
+        }
+        else
+        {
+            Debug.LogError("Invalid gun index: " + gunIndex);
+        }
     }
-    else
-    {
-        Debug.LogError("Invalid gun index: " + gunIndex);
-    }
-}
 
 }

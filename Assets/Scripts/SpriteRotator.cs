@@ -9,11 +9,13 @@ public class SpriteRotator : MonoBehaviour
     void Start()
     {
         target = FindObjectOfType<PlayerMove>().transform;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
         transform.LookAt(target);
+        transform.Rotate(0, 180, 0);
     }
 }

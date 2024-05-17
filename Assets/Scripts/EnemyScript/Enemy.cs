@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
     public float enemyHealth = 2f;
     public bool hasMelee;
     public bool hasMissile;
+    public bool hitScan;
     public float missileSpeed = 1000f;
     public int reactionTimeDef = 12;
     public GameObject missile;
@@ -124,25 +125,29 @@ public class Enemy : MonoBehaviour
     {
         if (isAttacking) return;
 
-        float tempDistance = dist;
-        float tempRand = randomFloat * 200f;
+    float tempDistance = dist;
+    float tempRand = randomFloat * 200f;
 
-        if(!hasMelee) tempDistance -= 32f;
-        if(dist > 50f) tempDistance = 50f;
+    if(!hasMelee) tempDistance -= 32f;
+    if(dist > 50f) tempDistance = 50f;
 
-        if(staggered && hasMissile) 
-        {
-            StartCoroutine(Missile()); 
-            staggered = false;
-        } 
-        else if(dist <= 4f)
-        {
-            StartCoroutine(Melee());    
-        }
-        else if(tempRand < tempDistance && hasMissile)
-        {
-            StartCoroutine(Missile());
-        }
+    if(staggered && hasMissile) 
+    {
+        StartCoroutine(Missile()); 
+        staggered = false;
+    } 
+    else if(dist <= 4f)
+    {
+        StartCoroutine(Melee());    
+    }
+    else if(tempRand < tempDistance && hasMissile)
+    {
+        StartCoroutine(Missile());
+    }
+    else if(!hasMissile && hitScan) // Add this condition
+    {
+        StartCoroutine(HitScan());
+    }
     }
 
     private IEnumerator Missile() 
@@ -171,6 +176,26 @@ public class Enemy : MonoBehaviour
         if (Vector3.Distance(transform.position, playerTransform.position) <= 4f)
         {
             playerHealth.DamagePlayer(10);
+        }
+        isAttacking = false;
+    }
+
+    private IEnumerator HitScan()
+    {
+        isAttacking = true;
+        LookAtPlayer();
+        yield return StartCoroutine(PlayAttackAnimation());
+        LookAtPlayer();
+
+        RaycastHit hit;
+        Vector3 direction = playerTransform.position - transform.position;
+        if (Physics.Raycast(transform.position, direction, out hit))
+        {
+            if (hit.collider.gameObject.CompareTag("Player"))
+            {
+                // Assuming the player has a method called TakeDamage
+                hit.collider.gameObject.GetComponent<PlayerHealth>().DamagePlayer(10);
+            }
         }
         isAttacking = false;
     }
